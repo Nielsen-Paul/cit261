@@ -2,11 +2,15 @@ function forLoop() {
     var nameArray; // ["Paul", "Stettsen", "Ryan", "Zack", "Spencer"];
     nameArray[0] = "Paul";
     nameArray[1] = "Stettsen";
+    nameArray[2] = "Ryan";
+    nameArray[3] = "Zack";
+    nameArray[4] = "Spencer";
 
     var loopString = " ";
-    for(var i = 0; i < 5; i++) {
-        loopString += nameArray[i] + " ";    
-    }
+    loopString += nameArray[0];
+    //for(var i = 0; i < 5; i++) {
+    //    loopString += nameArray[i] + " ";    
+    //}
     document.getElementById('forLoop').innerHTML = loopString;
 }
 
