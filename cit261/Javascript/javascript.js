@@ -1,11 +1,11 @@
 function forLoop() {
     var nameArray = ["Paul", "Stettsen", "Ryan", "Zack", "Spencer"];
 
-    //var loopString = " ";
-    //for(var i = 1; i < 6; i++) {
-    //    loopString += nameArray[i] + " ";    
-    //}
-    document.getElementById('forLoop').innerHTML = nameArray;
+    var loopString = " ";
+    for(var i = 0; i < 5; i++) {
+        loopString += nameArray[i] + " ";    
+    }
+    document.getElementById('forLoop').innerHTML = loopString;
 }
 
 function forEachLoop() {
