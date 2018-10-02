@@ -1,16 +1,13 @@
 function forLoop() {
-    var nameArray; // ["Paul", "Stettsen", "Ryan", "Zack", "Spencer"];
-    nameArray[0] = "Paul";
-    nameArray[1] = "Stettsen";
-    nameArray[2] = "Ryan";
-    nameArray[3] = "Zack";
-    nameArray[4] = "Spencer";
+    var nameArray = [];
+    nameArray["firstName"] = "Paul";
+    nameArray["lastName"] = "Nielsen";
+    nameArray["age"] = 35;
 
     var loopString = " ";
-    loopString += nameArray[0];
-    //for(var i = 0; i < 5; i++) {
-    //    loopString += nameArray[i] + " ";    
-    //}
+    loopString += nameArray["firstName"] + " "
+                + nameArray["lastName"] + " " 
+                + nameArray["age"];
     document.getElementById('forLoop').innerHTML = loopString;
 }
 
