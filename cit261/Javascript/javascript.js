@@ -1,10 +1,5 @@
 function forLoop() {
-    var nameArray;
-    nameArray[1] = "Paul";
-    nameArray[2] = "Stettsen";
-    nameArray[3] = "Ryan";
-    nameArray[4] = "Zack";
-    nameArray[5] = "Spencer";
+    var nameArray = ["Paul", "Stettsen", "Ryan", "Zack", "Spencer"];
 
     //var loopString = " ";
     //for(var i = 1; i < 6; i++) {
