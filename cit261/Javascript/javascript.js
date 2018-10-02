@@ -6,7 +6,7 @@ function forLoop() {
     nameArray[4] = "Zack";
     nameArray[5] = "Spencer";
 
-    var loopString = "";
+    var loopString = " ";
     for(var i = 1; i < 6; i++) {
         loopString += nameArray[i] + " ";    
     }
