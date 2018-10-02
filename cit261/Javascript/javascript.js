@@ -1,9 +1,9 @@
 function forLoop() {
     var forLoop;
     for(var i = 1; i < 11; i++) {
-        forLoop = i + " ";
+        forLoop += i + " ";
     }
-    document.getElementById('associative').innerHTML = forLoop;
+    document.getElementById('forLoop').innerHTML = forLoop;
 }
 
 function associative() {
