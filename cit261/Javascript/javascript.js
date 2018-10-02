@@ -1,4 +1,12 @@
 function forLoop() {
+    var forLoop;
+    for(var i = 1; i < 11; i++) {
+        forLoop = i + " ";
+    }
+    document.getElementById('associative').innerHTML = forLoop;
+}
+
+function associative() {
     var nameArray = [];
     nameArray["firstName"] = "Paul";
     nameArray["lastName"] = "Nielsen";
@@ -8,7 +16,7 @@ function forLoop() {
     loopString += nameArray["firstName"] + " "
                 + nameArray["lastName"] + " " 
                 + nameArray["age"];
-    document.getElementById('forLoop').innerHTML = loopString;
+    document.getElementById('associative').innerHTML = loopString;
 }
 
 function forEachLoop() {
