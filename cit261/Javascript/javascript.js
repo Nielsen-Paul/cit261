@@ -7,10 +7,7 @@ function forLoop() {
 }
 
 function forEachLoop() {
-    var loopArray;
-    for(var i = 11; i < 21; i++) {
-        loopArray.push(i.toString());
-    }
+    var loopArray = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
     var forEachString = " ";
     loopArray.forEach(function(element) {
         forEachString += element.toString() + " ";
