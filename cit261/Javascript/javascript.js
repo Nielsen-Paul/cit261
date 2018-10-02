@@ -1,5 +1,5 @@
 function forLoop() {
-    var forLoop;
+    var forLoop = "";
     for(var i = 1; i < 11; i++) {
         forLoop += i + " ";
     }
