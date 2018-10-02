@@ -1,5 +1,7 @@
 function forLoop() {
+    var loopString;
     for(var i = 1; i < 11; i++) {
-        document.getElementById('forLoop').innerHTML = i + " ";
+        loopString += i + " ";    
     }
+    document.getElementById('forLoop').innerHTML = loopString;
 }
