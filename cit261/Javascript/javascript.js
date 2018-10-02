@@ -14,3 +14,15 @@ function forEachLoop() {
     })
     document.getElementById('forEachLoop').innerHTML = forEachString;
 }
+
+function conditional(num) {
+    if(num > 20) {
+        document.getElementById('conditional').innerHTML = num + " is greater than 20";
+    } else if(num == 20) {
+        document.getElementById('conditional').innerHTML = num + " is equal to 20";
+    } else if(num < 20) {
+        document.getElementById('conditional').innerHTML = num + " is less than 20";
+    } else {
+        document.getElementById('conditional').innerHTML = "Is " + num + " a number?";
+    }
+}
