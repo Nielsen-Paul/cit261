@@ -13,7 +13,7 @@ function forEachLoop() {
     }
     var forEachString = " ";
     loopArray.forEach(function(element) {
-        forEachString += element + 11;
+        forEachString += element.toString() + " ";
     })
     document.getElementById('forEachLoop').innerHTML = forEachString;
 }
