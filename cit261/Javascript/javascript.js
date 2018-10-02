@@ -1,7 +1,14 @@
 function forLoop() {
-    var loopString = " ";
-    for(var i = 1; i < 11; i++) {
-        loopString += i + " ";    
+    var nameArray;
+    nameArray[1] = "Paul";
+    nameArray[2] = "Stettsen";
+    nameArray[3] = "Ryan";
+    nameArray[4] = "Zack";
+    nameArray[5] = "Spencer";
+
+    var loopString = "";
+    for(var i = 1; i < 6; i++) {
+        loopString += nameArray[i] + " ";    
     }
     document.getElementById('forLoop').innerHTML = loopString;
 }
