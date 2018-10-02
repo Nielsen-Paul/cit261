@@ -1,5 +1,5 @@
 function forLoop() {
-    var loopString;
+    var loopString = " ";
     for(var i = 1; i < 11; i++) {
         loopString += i + " ";    
     }
