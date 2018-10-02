@@ -15,7 +15,8 @@ function forEachLoop() {
     document.getElementById('forEachLoop').innerHTML = forEachString;
 }
 
-function conditional(num) {
+function conditional() {
+    var num = document.getElementsByName('textBox').value;
     if(num > 20) {
         document.getElementById('conditional').innerHTML = num + " is greater than 20";
     } else if(num == 20) {
