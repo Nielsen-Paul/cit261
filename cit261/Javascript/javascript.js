@@ -7,9 +7,9 @@ function forLoop() {
 }
 
 function forEachLoop() {
-    var loopArray = array[10];
-    for(var i = 10; i < 21; i++) {
-        loopArray[i] = i;    
+    var loopArray;
+    for(var i = 0; i < 10; i++) {
+        loopArray[i] = i + 11;    
     }
     var forEachString = " ";
     loopArray.forEach(function(element) {
