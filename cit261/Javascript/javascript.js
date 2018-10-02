@@ -10,7 +10,7 @@ function forEachLoop() {
     var loopArray = [11, 12, 13, 14, 15];
     var forEachString = " ";
     loopArray.forEach(function(element) {
-        forEachString += i + " ";
+        forEachString += element + 11;
     })
     document.getElementById('forEachLoop').innerHTML = forEachString;
 }
