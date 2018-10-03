@@ -2,20 +2,20 @@
 var Person = function (name) {
     this.name = name;
 }	
-Person.prototype.getName = function () {
-    return this.name;
-}
-var Baby = function (eyeColor) {
-    this.eyeColor = eyeColor;
-}
+//Person.prototype.getName = function () {
+//    return this.name;
+//}
+//var Baby = function (eyeColor) {
+//    this.eyeColor = eyeColor;
+//}
 
-var person = new person("Russell");
+//var person = new person("Russell");
 
-Baby.prototype = person;
+//Baby.prototype = person;
 
-var baby = new Baby("blue");
+//var baby = new Baby("blue");
 
-console.log(baby.getName());
+//console.log(baby.getName());
 
 function createPerson () {
     var name = document.getElementById('name').value;
