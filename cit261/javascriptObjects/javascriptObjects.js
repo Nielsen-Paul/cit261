@@ -2,9 +2,9 @@
 var Person = function (name) {
     this.name = name;
 }	
-//Person.prototype.getName = function () {
-//    return this.name;
-//}
+Person.prototype.getName = function () {
+    return this.name;
+}
 //var Baby = function (eyeColor) {
 //    this.eyeColor = eyeColor;
 //}
@@ -17,8 +17,8 @@ var Person = function (name) {
 
 //console.log(baby.getName());
 
-function createPerson () {
+function createPerson() {
     var name = document.getElementById('name').value;
-    var person = new person(name);
-    document.getElementById('returnName').innerHTML = "The person's name is " + name;
+    var person = new Person(name);
+    document.getElementById('returnName').innerHTML = "The person's name is " + person.name;
 }
