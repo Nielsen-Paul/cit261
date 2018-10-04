@@ -28,6 +28,6 @@ function createBaby() {
 function literalBaby() {
     var baby = {name:"Russell", eyeColor:"blue", hairColor:"blonde", gender:"male"};
     document.getElementById('returnLiteralBaby').innerHTML 
-    = baby.name + " is a " + baby.gender + " baby with " + baby.eyeColor + " and "
+    = baby.name + " is a " + baby.gender + " baby with " + baby.eyeColor + " eyes and "
     + baby.hairColor + " hair."
 }
