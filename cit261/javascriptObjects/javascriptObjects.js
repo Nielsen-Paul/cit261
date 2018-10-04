@@ -5,8 +5,8 @@ var Person = function (name) {
 Person.prototype.getName = function () {
     return this.name;
 }
-var Baby = function (eyeColor) {
-    this.eyeColor = eyeColor;
+var Baby = function (name) {
+    this.name = name;
 }
 
 //var person = new person("Russell");
