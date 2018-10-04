@@ -11,7 +11,7 @@ var Baby = function (eyeColor) {
 
 //var person = new person("Russell");
 
-Baby.prototype = person;
+
 
 //var baby = new Baby("blue");
 
@@ -25,6 +25,7 @@ function createPerson() {
 }
 
 function createBaby() {
+    Baby.prototype = person;
     var babyName = document.getElementById('babyName').value;
     var baby = new Baby(eyeColor);
     document.getElementById('returnBabyName').innerHTML 
