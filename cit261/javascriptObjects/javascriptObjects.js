@@ -25,9 +25,10 @@ function createPerson() {
 }
 
 function createBaby() {
-    Baby.prototype = person;
     var babyName = document.getElementById('babyName').value;
-    var baby = new Baby(eyeColor);
+    var person = new person(babyName);
+    Baby.prototype = person;
+    var baby = new Baby(babyName);
     document.getElementById('returnBabyName').innerHTML 
     = "The baby who's name is " + baby.getName + " has been created.";
 }
