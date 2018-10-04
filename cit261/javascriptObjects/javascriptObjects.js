@@ -24,3 +24,10 @@ function createBaby() {
     document.getElementById('returnBabyName').innerHTML 
     = "The baby who's name is " + baby.getName() + " has been created.";
 }
+
+function literalBaby() {
+    var baby = {name:"Russell", eyeColor:"blue", hairColor:"blonde", gender:"male"};
+    document.getElementById('returnLiteralBaby').innerHTML 
+    = baby.name + " is a " + baby.gender + " baby with " + baby.eyeColor + " and "
+    + baby.hairColor + " hair."
+}
