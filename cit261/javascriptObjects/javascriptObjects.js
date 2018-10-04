@@ -21,5 +21,5 @@ function createPerson() {
     var name = document.getElementById('name').value;
     var person = new Person(name);
     document.getElementById('returnName').innerHTML 
-    = "The person who's name is " + name + " has been created.";
+    = "The person who's name is " + person.getName + " has been created.";
 }
