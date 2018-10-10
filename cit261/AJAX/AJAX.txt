@@ -1,1 +1,4 @@
-{ "firstName": "Paul", "lastName": "Nielsen", "age": 35 }
+[ { "firstName": "Paul", "lastName": "Nielsen", "age": 35 },
+{ "firstName": "Erik", "lastName": "Nielsen", "age": 10 },
+{ "firstName": "Jill", "lastName": "Nielsen", "age": 7 },
+{ "firstName": "Will", "lastName": "Nielsen", "age": 5 } ]
