@@ -1,6 +1,6 @@
 
 function tryAJAX() {
-    const xhr = new HMLHttpRequest();
+    const xhr = new XMLHttpRequest();
 
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4) {
