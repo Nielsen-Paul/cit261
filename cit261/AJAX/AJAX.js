@@ -1,19 +1,13 @@
 
 function tryAJAX() {
-    const xhr = new XMLHttpRequest();
-
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4) {
-            if (xhr.status == 200) {
-                document.getElementById('printAJAX').innerHTML = xhr.responseText;
-            }
-
-            if (xhr.status == 404) {
-                document.getElementById('printAJAX').innerHTML = "File not found";
-            }
-        }
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("printAJAX").innerHTML =
+        this.responseText;
+      }
     };
-
-    xhr.open('get', 'AJAX.txt', true);
+    
+    xhr.open('GET', 'AJAX.txt', true);
     xhr.send();
 }
