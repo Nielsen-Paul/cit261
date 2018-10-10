@@ -3,11 +3,8 @@ function tryAJAX() {
     const xhr = new MLHttpRequest();
 
     xhr.onreadystatechange = function () {
-        var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function() {
-          if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState == 4 && this.status == 200) {
             document.getElementById('printAJAX').innerHTML = this.responseText;
-          }
         }
     };
     
