@@ -1,15 +1,13 @@
 
-const player = {
-    name: 'Tom Brady',
-    team: 'Patriots',
-    number: 12
-}
+
 
 function createPlayer() {
 
-    const playerObjToString = JSON.stringify(player);
+    var player = { name: 'Tom Brady', team: 'Patriots', number: 12 };
 
-    document.getElementById('printPlayer').innerHTML = myJSON;
-    
+    var playerObjToString = JSON.stringify(player);
+
+    document.getElementById('printPlayer').innerHTML = playerObjToString;
+
 }
 
