@@ -7,7 +7,7 @@ function tryAJAX() {
         this.responseText;
       }
     };
-    xhttp.open("GET", "smallAjax.txt", true);
+    xhttp.open("GET", "smallAJAX.txt", true);
     xhttp.send();
 }
 
