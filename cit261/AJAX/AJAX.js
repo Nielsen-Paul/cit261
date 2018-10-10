@@ -9,7 +9,7 @@ function tryAJAX() {
             }
 
             if (xhr.status == 404) {
-                document.getElementById('printAJAX').innerHTML = "File not found"
+                document.getElementById('printAJAX').innerHTML = "File not found";
             }
         }
     };
