@@ -16,7 +16,7 @@ function print(array) {
     var out = "";
     var i;
     for(i = 0; i < array.length; i++) {
-        out += jsonObj.firstName + " " + jsonObj.lastName + " is " + jsonObj.age + " years old.<br>";
+        out += array[i].firstName + " " + array[i].lastName + " is " + array[i].age + " years old.<br>";
     }
     document.getElementById('printAJAX').innerHTML = out;
 }
