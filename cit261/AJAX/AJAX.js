@@ -8,15 +8,15 @@ function tryAJAX() {
       }
     };
 
-    xhr.open('GET', 'AJAX.txt', true);
-    xhr.send();
+    xhttp.open('GET', 'AJAX.txt', true);
+    xhttp.send();
 }
 
 function print(array) {
     var out = "";
     var i;
     for(i = 0; i < array.length; i++) {
-        out += array[i].firstName + " " + array[i].lastName + " is " + array[i].age + " years old.<br>";
+        out += array[i].firstName + " " + array[i].lastName + " is " + array[i].age + " years old.";
     }
     document.getElementById('printAJAX').innerHTML = out;
 }
