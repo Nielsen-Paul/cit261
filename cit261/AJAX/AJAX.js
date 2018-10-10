@@ -3,19 +3,15 @@ function tryAJAX() {
     const xhr = new MLHttpRequest();
 
     xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4) {
-            if (xhr.status == 200) {
-                document.getElementById('printAJAX').innerHTML = xhr.responseText;
-            }
-
-            if (xhr.status == 404) {
-                document.getElementById('printAJAX').innerHTML = "File not found";
-            }
-        }
-    };
-
-    xhr.open('get', 'smallAjax.txt', true);
-    xhr.send();
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById('printAJAX2').innerHTML = this.responseText;
+          }
+        };
+    
+        xhttp.open('GET', 'smallAjax.txt', true);
+        xhttp.send();
 }
 
 function tryAJAX2() {
