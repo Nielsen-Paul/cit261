@@ -3,15 +3,16 @@ function tryAJAX() {
     const xhr = new MLHttpRequest();
 
     xhr.onreadystatechange = function () {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
             document.getElementById('printAJAX').innerHTML = this.responseText;
           }
-        };
+        }
+    };
     
-        xhttp.open('GET', 'smallAjax.txt', true);
-        xhttp.send();
+    xhr.open('GET', 'smallAjax.txt', true);
+    xhr.send();
 }
 
 function tryAJAX2() {
