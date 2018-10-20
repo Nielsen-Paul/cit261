@@ -21,8 +21,13 @@ function stringToJSON() {
 
     var jsonObj = JSON.parse(userString);
 
+    localStorage.setItem('jsonName', jsonObj.name);
+    localStorage.setItem('jsonBirthMonth', jsonObj.birthMonth);
+    localStorage.setItem('jsonColor', jsonObj.color);
+
     document.getElementById('printInfo').innerHTML = 
-        jsonObj.name + "'s birth month is " + jsonObj.birthMonth + " and favorite color is " + jsonObj.color;
+        localStorage.getItem('jsonName') + "'s birth month is " + localStorage.getItem('jsonBirthMonth') 
+        + " and favorite color is " + localStorage.getItem('jsonColor')  + ".";
 }
     
 nameBttn.addEventListener('click', printName);
