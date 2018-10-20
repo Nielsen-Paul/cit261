@@ -16,3 +16,7 @@ nameBttn.addEventListener('click', printName);
 
 document.getElementById('localName').innerHTML = localStorage.getItem('name');
 document.getElementById('localMonth').innerHTML = localStorage.getItem('birthMonth');
+
+function clear() {
+    localStorage.clear();
+}
