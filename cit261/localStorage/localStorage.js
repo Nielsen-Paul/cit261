@@ -16,9 +16,13 @@ function printBirthMonth() {
 document.getElementById('localName').innerHTML = localStorage.getItem('name');
 document.getElementById('localMonth').innerHTML = localStorage.getItem('birthMonth');
 
-function clear() {
-    localStorage.clear();
+function stringToJSON() {
+    var userString = document.getElementById('input').value;
+
+    var jsonObj = JSON.parse(userString);
+
+    document.getElementById('printInfo').innerHTML = 
+        jsonObj.name + "'s birth month is " + jsonObj.birthMonth + " and favorite color is " + jsonObj.color;
 }
     
 nameBttn.addEventListener('click', printName);
-clear.addEventListener('click', clear);
