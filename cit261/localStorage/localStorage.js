@@ -1,5 +1,6 @@
 
 var nameBttn = document.getElementById('name');
+var clear = document.getElementById('clear');
 
 function printName() {
     localStorage.setItem('name', 'Paul');
@@ -12,12 +13,12 @@ function printBirthMonth() {
     document.getElementById('printBirthMonth').innerHTML = localStorage.getItem('birthMonth');
 }
 
-nameBttn.addEventListener('click', printName);
-
 document.getElementById('localName').innerHTML = localStorage.getItem('name');
 document.getElementById('localMonth').innerHTML = localStorage.getItem('birthMonth');
 
 function clear() {
-    localStorage.removeItem('name');
-    localStorage.removeItem('birthMonth');
+    localStorage.clear();
 }
+    
+nameBttn.addEventListener('click', printName);
+clear.addEventListener('click', clear);
