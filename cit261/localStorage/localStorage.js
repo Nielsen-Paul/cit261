@@ -1,5 +1,5 @@
 
-var nameForm = document.querySelector('nameForm');
+var nameForm = document.getElementById('nameForm');
 var name = document.getElementById('name');
 
 nameForm.addEventListener('click', function () {
