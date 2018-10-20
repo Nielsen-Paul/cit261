@@ -1,5 +1,5 @@
 
-var nameBttn = document.querySelector('name');
+var nameBttn = document.getElementById('name');
 
 function printName() {
     localStorage.setItem('name', 'Paul');
