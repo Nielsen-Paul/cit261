@@ -2,27 +2,25 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Local Storage</title>
+    <title>Local Storage</title>
 
 </head>
 
 <body>
 
-  <button id="name">Print name</button>
+    <button id="name">Print name</button>
 
-  <p id="printName">Name will appear here</p>
+    <p id="printName">Name will appear here</p>
 
-  <form onsubmit="printBirthMonth()">
     <input type="text" id="birthMonth" value="" />
-    <button type="submit">Submit</button>
-  </form>
+    <button onclick="printBirthMonth()">Submit</button>
 
-  <p id="printBirthMonth">Birth month will appear here</p>
+    <p id="printBirthMonth">Birth month will appear here</p>
 
-  <script src="localStorage.js"></script>
+    <script src="localStorage.js"></script>
 </body>
 
 </html>
