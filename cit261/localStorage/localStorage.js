@@ -7,8 +7,8 @@ function printName() {
 }
 
 function printBirthMonth() {
-    var birthMonth = getElementById('birthMonth');
-    localStorage.setItem('birthMonth', birthMonth.value);
+    var birthMonth = getElementById('birthMonth').value;
+    localStorage.setItem('birthMonth', birthMonth);
     document.getElementById('printBirthMonth').innerHTML = localStorage.getItem('birthMonth');
 }
 
