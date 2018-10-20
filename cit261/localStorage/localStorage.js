@@ -1,7 +1,6 @@
 
 var nameForm = document.querySelector('nameForm');
 var name = document.getElementById('name');
-var data = localStorage.getItem('name');
 
 nameForm.addEventListener('click', function () {
 
