@@ -18,5 +18,6 @@ document.getElementById('localName').innerHTML = localStorage.getItem('name');
 document.getElementById('localMonth').innerHTML = localStorage.getItem('birthMonth');
 
 function clear() {
-    document.localStorage.clear();
+    localStorage.removeItem('name');
+    localStorage.removeItem('birthMonth');
 }
