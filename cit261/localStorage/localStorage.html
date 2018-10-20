@@ -13,17 +13,14 @@
 
   <div>
     <h1>Local Storage</h1>
-    <h3>Enter a name, hit submit, and repeat</h3>
-    <h3>Hit Clear when done</h3>
-    <form>
-        <input id="name" type="text" placeholder="Name" >
+    <h3>Enter a name</h3>
+    <form id="nameForm">
+        <input id="name" type="text" placeholder="Name" value="" ><br>
+        <button id="nameButton" type="submit">Submit</button>
     </form>
       
-      <h2>Names</h2>
-      <ul></ul>
-      
-      <button id="clear">Clear All</button>
-
+      <h2>Name</h2>
+      <p id="printName" value=""></p>
   </div>
 
   <script src="localStorage.js"></script>
