@@ -1,10 +1,9 @@
 
-var nameForm = document.getElementById('nameForm');
-var name = document.getElementById('name');
+var nameBttn = document.querySelector('name');
 
-nameForm.onsubmit = function () {
-
-    localStorage.setItem('name', name.value);
-    document.getElementById('printName') = localStorage.getItem('name');
-    
+function printName() {
+    localStorage.setItem('name', 'Paul');
+    document.getElementById.innerHTML = localStorage.getItem('name');
 }
+
+nameBttn.addEventListener('click', printName);
