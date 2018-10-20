@@ -10,15 +10,24 @@
 </head>
 
 <body>
+    <h2>Click to Print a Name</h2>
 
     <button id="name">Print name</button>
 
     <p id="printName">Name will appear here</p>
 
-    <input type="text" id="birthMonth" value="June" />
+    <h1>Type your Birth Month here</h1>
+
+    <input type="text" id="birthMonth" value="June" /><br>
     <button onclick="printBirthMonth()">Select</button>
 
     <p id="printBirthMonth">Birth month will appear here</p>
+
+    <h1>Navigate away and come back</h1>
+
+    <h2>Info from Local Storage</h2>
+    <p>Name: </p><span id="localName">Not yet defined</span>
+    <p>Birth Month: </p><span id="localMonth">Not yet defined</span>
 
     <script src="localStorage.js"></script>
 </body>
