@@ -7,9 +7,8 @@ function deleteMe() {
 
 function createSibling() {
     var button = document.createElement("button");
-    button.value("Change me");
+    var value = document.createTextNode("I'm New")
 
-    var element = document.getElementById("div1");
-    var child = document.getElementById("button2");
-    element.insertBefore(button, child);
+    button.appendChild(value);
+    document.body.appendChild(button);
 }
