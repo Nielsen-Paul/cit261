@@ -23,7 +23,7 @@ function leaper() {
 
     var button2 = document.createElement("button");
     var value2 = document.createTextNode("Leap")
-    button2.addEventListener('onclick', leaper);
+    button2.addEventListener("click", leaper);
 
     button2.appendChild(value2);
     document.body.appendChild(button2);
