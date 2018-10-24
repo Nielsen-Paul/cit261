@@ -21,11 +21,12 @@ function leaper() {
 
     var button2 = document.createElement("button");
     var value2 = document.createTextNode("Leap")
+    button2.attachEvent("click", leaper);
 
     button2.appendChild(value2);
     document.body.appendChild(button2);
 
-    button2.addEventListener("click", leaper());
+    
 }
 
 function frogger() {
