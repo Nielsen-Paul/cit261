@@ -19,11 +19,11 @@ function leaper() {
     var child = document.getElementById("leap");
     parent2.removeChild(child);
 
-    var button = document.createElement("button");
-    var value = document.createTextNode("Leap")
+    var button2 = document.createElement("button");
+    var value2 = document.createTextNode("Leap")
 
-    button.appendChild(value);
-    document.body.appendChilde(button);
+    button2.appendChild(value2);
+    document.body.appendChilde(button2);
 }
 
 function frogger() {
