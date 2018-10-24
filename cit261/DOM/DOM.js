@@ -19,22 +19,22 @@ function leaper() {
     var child = document.getElementById("leap");
     parent.removeChild(child);
 
-    var button = document.createElement("button");
-    var value = document.createTextNode("Leap")
+    //var button = document.createElement("button");
+    //var value = document.createTextNode("Leap")
 
-    button.appendChild(value);
-    document.body.appendChilde(button);
+    //button.appendChild(value);
+    //document.body.appendChilde(button);
 }
 
 function frogger() {
 
-    var parent2 = document.getElementById("div3");
+    var parent3 = document.getElementById("div3");
     var child = document.getElementById("frog");
     parent.removeChild(child);
 
-    var button = document.createElement("button");
-    var value = document.createTextNode("Frog")
+    //var button = document.createElement("button");
+    //var value = document.createTextNode("Frog")
 
-    button.appendChild(value);
-    document.body.appendChild(button);
+    //button.appendChild(value);
+    //document.body.appendChild(button);
 }
