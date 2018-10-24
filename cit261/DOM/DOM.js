@@ -10,7 +10,7 @@ function createSibling() {
     var value = document.createTextNode("I'm New")
 
     button.appendChild(value);
-    document.body.insertBefore(button);
+    document.body.appendChild(button);
 }
 
 function leaper() {
@@ -23,7 +23,7 @@ function leaper() {
     var value = document.createTextNode("Leap")
 
     button.appendChild(value);
-    document.body.insertBefore(button);
+    document.body.appendChilde(button);
 }
 
 function frogger() {
@@ -36,5 +36,5 @@ function frogger() {
     var value = document.createTextNode("Frog")
 
     button.appendChild(value);
-    document.body.insertBefore(button);
+    document.body.appendChild(button);
 }
