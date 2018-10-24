@@ -6,12 +6,13 @@ function deleteMe() {
 }
 
 function createSibling() {
+    var parent = document.getElementById("div2");
     var button = document.createElement("button");
     var value = document.createTextNode("I'm New");
     var button2 = document.getElementById("button2");
 
     button.appendChild(value);
-    document.body.insertBefore(button, button2);
+    parent.insertBefore(button, button2);
 }
 
 function leaper() {
