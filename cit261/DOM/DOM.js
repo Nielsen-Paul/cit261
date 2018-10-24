@@ -7,10 +7,11 @@ function deleteMe() {
 
 function createSibling() {
     var button = document.createElement("button");
-    var value = document.createTextNode("I'm New")
+    var value = document.createTextNode("I'm New");
+    var button2 = document.getElementById("button2");
 
     button.appendChild(value);
-    document.body.appendChild(button);
+    document.body.insertBefore(button, button2);
 }
 
 function leaper() {
