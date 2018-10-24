@@ -10,5 +10,5 @@ function createSibling() {
     var value = document.createTextNode("I'm New")
 
     button.appendChild(value);
-    document.body.appendChild(button);
+    document.body.insertBefore(button);
 }
