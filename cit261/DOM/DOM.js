@@ -23,7 +23,7 @@ function leaper() {
     var value2 = document.createTextNode("Leap")
 
     button2.appendChild(value2);
-    document.body.appendChilde(button2);
+    document.body.appendChild(button2);
 }
 
 function frogger() {
@@ -32,9 +32,9 @@ function frogger() {
     var child = document.getElementById("frog");
     parent3.removeChild(child);
 
-    //var button = document.createElement("button");
-    //var value = document.createTextNode("Frog")
+    var button = document.createElement("button");
+    var value = document.createTextNode("Frog")
 
-    //button.appendChild(value);
-    //document.body.appendChild(button);
+    button.appendChild(value);
+    document.body.appendChild(button);
 }
