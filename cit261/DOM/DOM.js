@@ -24,6 +24,8 @@ function leaper() {
 
     button2.appendChild(value2);
     document.body.appendChild(button2);
+
+    button2.addEventListener("click", leaper());
 }
 
 function frogger() {
