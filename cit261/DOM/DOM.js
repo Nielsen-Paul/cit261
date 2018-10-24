@@ -17,20 +17,20 @@ function leaper() {
 
     var parent2 = document.getElementById("div3");
     var child = document.getElementById("leap");
-    parent.removeChild(child);
+    parent2.removeChild(child);
 
-    //var button = document.createElement("button");
-    //var value = document.createTextNode("Leap")
+    var button = document.createElement("button");
+    var value = document.createTextNode("Leap")
 
-    //button.appendChild(value);
-    //document.body.appendChilde(button);
+    button.appendChild(value);
+    document.body.appendChilde(button);
 }
 
 function frogger() {
 
     var parent3 = document.getElementById("div3");
     var child = document.getElementById("frog");
-    parent.removeChild(child);
+    parent3.removeChild(child);
 
     //var button = document.createElement("button");
     //var value = document.createTextNode("Frog")
