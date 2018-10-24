@@ -12,3 +12,29 @@ function createSibling() {
     button.appendChild(value);
     document.body.insertBefore(button);
 }
+
+function leaper() {
+
+    var parent2 = document.getElementById("div3");
+    var child = document.getElementById("leap");
+    parent.removeChild(child);
+
+    var button = document.createElement("button");
+    var value = document.createTextNode("Leap")
+
+    button.appendChild(value);
+    document.body.insertBefore(button);
+}
+
+function frogger() {
+
+    var parent2 = document.getElementById("div3");
+    var child = document.getElementById("frog");
+    parent.removeChild(child);
+
+    var button = document.createElement("button");
+    var value = document.createTextNode("Frog")
+
+    button.appendChild(value);
+    document.body.insertBefore(button);
+}
