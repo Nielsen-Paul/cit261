@@ -27,4 +27,10 @@ function changeBox() {
 
 function changeBody() {
     document.body.style.background = 'orange';
+    document.body.style.textTransform = 'uppercase';
+    document.body.style.fontStyle = 'italic';
+    document.body.style.fontFamily = 'Impact, Charcoal, sans-serif';
+    document.body.style.fontSize = '25px';
+    document.body.style.textAlign = 'center';
+    document.body.style.textShadow = '3px 3px blue';
 }
