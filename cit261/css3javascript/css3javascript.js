@@ -15,7 +15,8 @@ function changeFont() {
 }
 
 function changeShadow() {
-    document.getElementById('div1').style.background = 'blue';
+    document.getElementById('div4').style.textAlign = 'center';
+    document.getElementById('div4').style.textShadow = '4px 4px 5x green';
 }
 
 function changeBox() {
