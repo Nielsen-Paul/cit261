@@ -17,6 +17,7 @@ function changeFont() {
 function changeShadow() {
     document.getElementById('div4').style.textAlign = 'center';
     document.getElementById('div4').style.letterSpacing = '4px';
+    document.getElementById('div4').style.color = 'white';
     document.getElementById('div4').style.textShadow = '4px 4px 5px green';
 }
 
