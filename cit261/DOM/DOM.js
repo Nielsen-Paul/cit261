@@ -41,3 +41,13 @@ function frogger() {
     button.appendChild(value);
     document.body.appendChild(button);
 }
+
+function replaceMe() {
+    var parent = document.getElementById("div4");
+    var button = document.createElement("button");
+    var value = document.createTextNode("I'm New");
+    var button2 = document.getElementById("button4");
+
+    button.appendChild(value);
+    parent.replaceChild(button, button4);
+}
