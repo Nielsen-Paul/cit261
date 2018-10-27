@@ -10,7 +10,8 @@ function changeText() {
 }
 
 function changeFont() {
-    document.getElementById('div1').style.background = 'blue';
+    document.getElementById('div3').style.fontStyle = 'italic';
+    document.getElementById('div3').style.fontSize = '30px';
 }
 
 function changeShadow() {
