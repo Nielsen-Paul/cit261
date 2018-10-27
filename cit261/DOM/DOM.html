@@ -21,6 +21,52 @@
             <button id="leap" onclick="leaper()">Leap</button>
             <button id="frog" onclick="frogger()">Frog</button>
         </div>
+        <h3>Replace child</h3>
+        <div id="div4">
+            <button id="button4" onclick="replaceMe()">Replace me</button>
+        </div>
         <br>
+        <p>function deleteMe() {<br>
+            var parent = document.getElementById("div1");<br>
+            var child = document.getElementById("button1");<br>
+            parent.removeChild(child);<br>
+        }</p>
+        
+        <p>function createSibling() {<br>
+            var parent = document.getElementById("div2");<br>
+            var button = document.createElement("button");<br>
+            var value = document.createTextNode("I'm New");<br>
+            var button2 = document.getElementById("button2");<br>
+            <br>
+            button.appendChild(value);<br>
+            parent.insertBefore(button, button2);<br>
+        }</p>
+        
+        <p>function leaper() {<br>
+            <br>
+            var parent2 = document.getElementById("div3");<br>
+            var child = document.getElementById("leap");<br>
+            parent2.removeChild(child);<br>
+            <br>
+            var button2 = document.createElement("button");<br>
+            var value2 = document.createTextNode("Leap");<br>
+        
+            button2.appendChild(value2);<br>
+            document.body.appendChild(button2);<br>
+            <br>
+        }</p>
+        
+        <p>function frogger() {<br>
+            <br>
+            var parent3 = document.getElementById("div3");<br>
+            var child = document.getElementById("frog");<br>
+            parent3.removeChild(child);<br>
+            <br>
+            var button = document.createElement("button");<br>
+            var value = document.createTextNode("Frog")<br>
+            <br>
+            button.appendChild(value);<br>
+            document.body.appendChild(button);<br>
+        }</p>
     </body>
 </html>
