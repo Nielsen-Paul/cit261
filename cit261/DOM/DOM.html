@@ -26,6 +26,7 @@
             <button id="button4" onclick="replaceMe()">Replace me</button>
         </div>
         <br>
+        <h2>JavaScript Code</h2>
         <p>function deleteMe() {<br>
             var parent = document.getElementById("div1");<br>
             var child = document.getElementById("button1");<br>
@@ -67,6 +68,16 @@
             <br>
             button.appendChild(value);<br>
             document.body.appendChild(button);<br>
+        }</p>
+
+        <p>function replaceMe() {<br>
+            var parent = document.getElementById("div4");<br>
+            var button = document.createElement("button");<br>
+            var value = document.createTextNode("Replaced");<br>
+            var button2 = document.getElementById("button4");<br>
+            <br>
+            button.appendChild(value);<br>
+            parent.replaceChild(button, button4);<br>
         }</p>
     </body>
 </html>
