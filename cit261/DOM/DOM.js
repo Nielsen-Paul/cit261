@@ -25,7 +25,7 @@ function leaper() {
     var value2 = document.createTextNode("Leap");
 
     button2.appendChild(value2);
-    document.parent2.appendChild(button2);
+    document.body.appendChild(button2);
 
 }
 
@@ -39,7 +39,7 @@ function frogger() {
     var value = document.createTextNode("Frog")
 
     button.appendChild(value);
-    document.parent3.appendChild(button);
+    document.body.appendChild(button);
 }
 
 function replaceMe() {
