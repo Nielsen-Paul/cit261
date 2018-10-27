@@ -1,4 +1,5 @@
+document.getElementById('id1').style.color = 'red'
 
 function changeBackground() {
-    document.style.color = 'blue';
+    document.getElementById('div1').style.color = 'blue';
 }
