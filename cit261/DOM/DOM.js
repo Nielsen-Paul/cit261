@@ -45,7 +45,7 @@ function frogger() {
 function replaceMe() {
     var parent = document.getElementById("div4");
     var button = document.createElement("button");
-    var value = document.createTextNode("I'm New");
+    var value = document.createTextNode("Replaced");
     var button2 = document.getElementById("button4");
 
     button.appendChild(value);
