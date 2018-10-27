@@ -43,11 +43,11 @@ function frogger() {
 }
 
 function replaceMe() {
-    var parent = document.getElementById("div4");
-    var button = document.createElement("button");
+    var parent4 = document.getElementById("div4");
+    var button5 = document.createElement("button");
     var value = document.createTextNode("Replaced");
-    var button2 = document.getElementById("button4");
+    var button4 = document.getElementById("button4");
 
     button.appendChild(value);
-    parent.replaceChild(button, button4);
+    parent4.replaceChild(button5, button4);
 }
