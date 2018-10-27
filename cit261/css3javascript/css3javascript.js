@@ -22,6 +22,6 @@ function changeShadow() {
 }
 
 function changeBox() {
-    document.getElementById('div5').style.alignSelf = 'center';
+    document.getElementById('div5').style.textAlign = 'right';
     document.getElementById('div5').style.boxShadow = '20px 30px 5px purple';
 }
