@@ -48,6 +48,6 @@ function replaceMe() {
     var value = document.createTextNode("Replaced");
     var button4 = document.getElementById("button4");
 
-    button.appendChild(value);
+    button5.appendChild(value);
     parent4.replaceChild(button5, button4);
 }
