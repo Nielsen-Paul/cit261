@@ -26,5 +26,5 @@ function changeBox() {
 }
 
 function changeBody() {
-    document.getElementsByTagName('body').style.background = 'orange';
+    document.body.style.background = 'orange';
 }
