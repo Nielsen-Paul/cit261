@@ -6,10 +6,10 @@ window.onload = function () {
     var img = document.getElementById("campbells");
     ctx.drawImage(img, 10, 10);
 
-    var canvas = document.getElementById('boxCanvas');
-    var ctx = canvas.getContext('2d');
+    var canvas2 = document.getElementById('boxCanvas');
+    var ctx2 = canvas2.getContext('2d');
 
-    ctx.fillStyle = 'blue';
-    ctx.fillRect(100, 100, 100, 100);
+    ctx2.fillStyle = 'blue';
+    ctx2.fillRect(100, 100, 100, 100);
 };
 
