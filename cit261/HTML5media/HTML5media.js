@@ -23,7 +23,7 @@ function moveBox() {
     var ctx3 = canvas3.getContext('2d');
 
     ctx3.fillStyle = 'blue';
-    ctx3.fillRect(100, 10, 100, 100);
+    ctx3.fillRect(10, 10, 100, 100);
 
     var canvas4 = document.getElementById("boxCanvas");
 
