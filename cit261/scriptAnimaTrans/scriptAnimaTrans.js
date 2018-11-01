@@ -1,0 +1,22 @@
+
+function myMove() {
+    var elem = document.getElementById("animate");
+    var pos = 0;
+    var id = setInterval(frame, 5);
+    function frame() {
+        if (random == 200) {
+            clearInterval(id);
+        } else {
+            var min = 0;
+            var max = 350;
+            var random = Math.floor(Math.random() * (+max - +min)) + +min;
+
+            var min2 = 0;
+            var max2 = 350;
+            var random2 = Math.floor(Math.random() * (+max2 - +min2)) + +min2;
+
+            elem.style.top = random + 'px';
+            elem.style.left = random2 + 'px';
+        }
+    }
+}
