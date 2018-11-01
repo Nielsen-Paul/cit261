@@ -13,11 +13,11 @@
   }
   
   #shapeDiv {
-    border-bottom: 200px solid red;
+    border-top: 200px solid red;
 	border-left: 100px solid transparent;
 	border-right: 100px solid transparent;
 	height: 0;
-	width: 125px;
+	width: 400px;
   }
 
   #shapeDiv:hover {
