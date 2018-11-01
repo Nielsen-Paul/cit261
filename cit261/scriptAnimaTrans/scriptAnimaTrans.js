@@ -24,4 +24,7 @@ function myMove() {
 function transition() {
     document.getElementById("shapeDiv").style.WebkitTransition = "all 2s";
     document.getElementById("shapeDiv").style.transition = "all 2s";
+
+    document.getElementById("rotateDiv").style.WebkitTransition = "all 2s";
+    document.getElementById("rotateDiv").style.transition = "all 2s";
 }
