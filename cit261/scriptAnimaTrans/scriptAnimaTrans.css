@@ -25,7 +25,7 @@
 	height: 0;
 	border-left: 100px solid transparent;
 	border-right: 100px solid transparent;
-	border-bottom: 200px solid green;
+	border-top: 200px solid green;
   }
 
   #rotateDiv {
