@@ -11,13 +11,6 @@
     position: absolute;
     background-color: purple;
   }
-
-  #newContainer {
-    width: 300px;
-    height: 300px;
-    position: relative;
-    background: lightgreen;
-  }
   
   #shapeDiv {
     width: 0;
