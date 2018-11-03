@@ -31,8 +31,6 @@ function transition() {
 
 function transformation() {
     document.getElementById("shapeDiv").style.WebkitTransform = "rotate(20deg)"; 
-    // Code for IE9
     document.getElementById("shapeDiv").style.msTransform = "rotate(20deg)"; 
-    // Standard syntax
     document.getElementById("shapeDiv").style.transform = "rotate(20deg)";
 }
