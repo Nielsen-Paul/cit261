@@ -13,31 +13,31 @@
   }
   
   #shapeDiv {
-    width: 0;
-    height: 0;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-bottom: 200px solid green;
-  }
-
-  #shapeDiv:hover {
     border-bottom: 200px solid red;
-	  border-left: 100px solid transparent;
+  	border-left: 100px solid transparent;
 	  border-right: 100px solid transparent;
-	  height: 0;
+  	height: 0;
 	  width: 300px;
   }
 
-  #changeShape {
-	height: 200px;
-    width: 200px;
-    background-color: blue;
-    border-radius: 50%;
+  #shapeDiv:hover {
+  	width: 0;
+	  height: 0;
+  	border-left: 100px solid transparent;
+	  border-right: 100px solid transparent;
+  	border-bottom: 200px solid green;
   }
-
-  #changeShape:hover {
+  
+  #changeShape {
     height: 200px;
     width: 200px;
     background-color: orangered;
     border-radius: 0%;
+  }
+
+  #changeShape:hover {
+	  height: 200px;
+    width: 200px;
+    background-color: blue;
+    border-radius: 50%;
   }
