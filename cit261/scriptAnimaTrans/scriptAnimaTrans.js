@@ -35,7 +35,7 @@ function transformation() {
         document.getElementById("shapeDiv").style.msTransform = "rotate(180deg)";
         document.getElementById("shapeDiv").style.transform = "rotate(180deg)";
 
-        document.getElementById("changeShape").style.WebkitTransform = "rotate(-180deg)";
-        document.getElementById("changeShape").style.msTransform = "rotate(-180deg)";
-        document.getElementById("changeShape").style.transform = "rotate(-180deg)";
+        document.getElementById("changeShape").style.WebkitTransform = "rotate(-135deg)";
+        document.getElementById("changeShape").style.msTransform = "rotate(-135deg)";
+        document.getElementById("changeShape").style.transform = "rotate(-135deg)";
 }

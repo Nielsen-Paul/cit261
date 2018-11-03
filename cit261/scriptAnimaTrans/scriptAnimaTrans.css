@@ -13,19 +13,19 @@
   }
   
   #shapeDiv {
-    border-bottom: 200px solid red;
-	border-left: 100px solid transparent;
-	border-right: 100px solid transparent;
-	height: 0;
-	width: 300px;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid green;
   }
 
   #shapeDiv:hover {
-	width: 0;
-	height: 0;
-	border-left: 100px solid transparent;
-	border-right: 100px solid transparent;
-	border-bottom: 200px solid green;
+    border-bottom: 200px solid red;
+	  border-left: 100px solid transparent;
+	  border-right: 100px solid transparent;
+	  height: 0;
+	  width: 300px;
   }
 
   #changeShape {
