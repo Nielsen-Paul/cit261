@@ -30,7 +30,11 @@ function transition() {
 }
 
 function transformation() {
-    document.getElementById("shapeDiv").style.WebkitTransform = "rotate(20deg)"; 
-    document.getElementById("shapeDiv").style.msTransform = "rotate(20deg)"; 
-    document.getElementById("shapeDiv").style.transform = "rotate(20deg)";
+    var fun = 0;
+
+    while (fun != 0) {
+        document.getElementById("shapeDiv").style.WebkitTransform = "rotate(20deg)";
+        document.getElementById("shapeDiv").style.msTransform = "rotate(20deg)";
+        document.getElementById("shapeDiv").style.transform = "rotate(20deg)";
+    }
 }
