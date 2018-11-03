@@ -30,6 +30,9 @@ function transition() {
 }
 
 function transformation() {
+    var fun = 0;
+
+    while(fun == 0) {
 
         document.getElementById("shapeDiv").style.WebkitTransform = "rotate(180deg)";
         document.getElementById("shapeDiv").style.msTransform = "rotate(180deg)";
@@ -38,4 +41,5 @@ function transformation() {
         document.getElementById("changeShape").style.WebkitTransform = "rotate(-135deg)";
         document.getElementById("changeShape").style.msTransform = "rotate(-135deg)";
         document.getElementById("changeShape").style.transform = "rotate(-135deg)";
+    }
 }
