@@ -8,10 +8,10 @@
 }
 
 #circle {
-    height: 140px;
-    width: 140px;
+    height: 50px;
+    width: 50px;
     background-color: #555;
-    border-radius: 70px;
+    border-radius: 50%;
 }
 
 #circle:hover {
@@ -22,22 +22,14 @@
 	0% {
 		top: 0;
 	}
+	25% {
+		top: 100px;
+	}
 	50% {
-		top: 140px;
-		height: 140px;
+		top: 160px;
 	}
-	55% {
-		top: 160px; 
-		height: 120px; 
-		border-radius: 70px / 60px;
-	}
-	65% {
-		top: 120px; 
-		height: 140px; 
-		border-radius: 70px;
-	}
-	95% {
-		top: 0;
+	75% {
+		top: 100px;
 	}
 	100% {
 		top: 0;
