@@ -1,9 +1,17 @@
+#circleDiv {
+	width: 140px;
+	height: 300px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin: -150px 0 0 -70px;
+}
 
 #circle {
     height: 50px;
     width: 50px;
     background-color: #555;
-    border-radius: 70px;
+    border-radius: 50%;
 }
 
 #circle:hover {
