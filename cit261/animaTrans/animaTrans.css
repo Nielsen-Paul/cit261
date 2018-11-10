@@ -23,31 +23,25 @@
 }
 */
 div {
-    width: 100px;
-	height: 100px;
+    width: 50px;
+	height: 50px;
 	border-radius: 50px;
     background-color: red;
     position: relative;
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
     animation-name: example;
-    animation-duration: 4s;
+    animation-duration: 1s;
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
-    0%   {left:0px; top:200px;}
-    25%  {left:33px; top:167px;}
-    50%  {left:66px; top:133px;}
-    75%  {left:100px; top:100px;}
-    100% {left:133px; top:67px;}
+	from {left:0px; top:200px;}
+	to {left:200px; top:50px;}
 }
 
 /* Standard syntax */
 @keyframes example {
-    0%   {left:0px; top:200px;}
-    25%  {left:33px; top:167px;}
-    50%  {left:66px; top:133px;}
-    75%  {left:100px; top:100px;}
-    100% {left:133px; top:67px;}
+	from {left:0px; top:200px;}
+	to {left:200px; top:50px;}
 }
