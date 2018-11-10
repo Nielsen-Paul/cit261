@@ -29,6 +29,10 @@
 
 #soccerGoal {
 	border-style: solid solid none solid;
+	position: fixed;
+	width: 150px;
+	height: 100px;
+	left: 150px;
 }
 
 #soccerBall {
