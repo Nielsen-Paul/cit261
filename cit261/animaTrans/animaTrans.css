@@ -1,4 +1,4 @@
-
+/*
 #circle {
     height: 50px;
     width: 50px;
@@ -20,4 +20,34 @@
 	25% { left:25px; top:175px; }
 	50% { left:50px; top:150px; }
 	100% { left:75px; top:125px; }
+}
+*/
+div {
+    width: 100px;
+	height: 100px;
+	border-radius: 50px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {left:0px; top:200px;}
+    25%  {left:33px; top:167px;}
+    50%  {left:66px; top:133px;}
+    75%  {left:100px; top:100px;}
+    100% {left:133px; top:67px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {left:0px; top:200px;}
+    25%  {left:33px; top:167px;}
+    50%  {left:66px; top:133px;}
+    75%  {left:100px; top:100px;}
+    100% {left:133px; top:67px;}
 }
