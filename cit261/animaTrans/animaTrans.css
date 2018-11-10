@@ -46,6 +46,7 @@
 	height: 100px;
 	width: 50px;
 	background-color: brown;
+	border-radius: 50%;
 	transition: ease;
 	transition: width 2s;
 	transition: height 2s;
