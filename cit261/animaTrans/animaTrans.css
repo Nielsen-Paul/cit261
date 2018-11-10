@@ -1,21 +1,11 @@
-#circleDiv {
-	width: 140px;
-	height: 300px;
-	position: fixed;
-	left: 50%;
-	top: 50%;
-	margin: -150px 0 0 -70px;
-}
 
 #circle {
     height: 50px;
     width: 50px;
     background-color: #555;
-    border-radius: 50%;
-}
-
-#circle:hover {
-    animation: jump 1s infinite;
+	border-radius: 50%;
+	animation: jump 1s infinite;
+	-webkit-animation: jump 1s infinite;
 }
 
 @keyframes jump {
@@ -23,15 +13,12 @@
 		top: 0;
 	}
 	25% {
-		top: 100px;
-	}
-	50% {
-		top: 160px;
+		top: 120px;
 	}
 	75% {
-		top: 100px;
+		top: 160px; 
 	}
 	100% {
-		top: 0;
+		top: 120px; 
 	}
 }
