@@ -9,16 +9,8 @@
 }
 
 @keyframes jump {
-	0% {
-		top: 0;
-	}
-	25% {
-		top: 120px;
-	}
-	75% {
-		top: 160px; 
-	}
-	100% {
-		top: 120px; 
-	}
+	0% { left:0px; top:200px; }
+	25% { left:25px; top:175px; }
+	50% { left:50px; top:150px; }
+	100% { left:75px; top:125px; }
 }
