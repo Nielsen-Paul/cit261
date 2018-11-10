@@ -46,12 +46,12 @@
 #ball {
 	height: 100px;
 	width: 50px;
+	top:100px;
 	background-color: brown;
 	border-radius: 50%;
 	transition: ease;
 	transition: width 2s, height 2s;
 	-webkit-transition: width 2s, height 2s; /* For Safari 3.1 to 6.0 */
-	top:100px;
 }
 
 #ball:hover {
