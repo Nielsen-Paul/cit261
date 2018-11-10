@@ -6,7 +6,7 @@
 
 #soccerGoal {
 	border-style: solid solid none solid;
-	position: fixed;
+	position: relative;
 	width: 150px;
 	height: 100px;
 	left: 150px;
@@ -47,11 +47,11 @@
 	width: 50px;
 	background-color: brown;
 	transition: ease;
-
+	top:100px;
 }
 
 #ball:hover {
-	height: 50%;
-	width: 50%;
+	height: 50px;
+	width: 25px;
 }
 
