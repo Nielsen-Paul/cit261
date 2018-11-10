@@ -39,7 +39,8 @@
 
 #football {
 	width: 200px;
-	height: 400px;
+	height: 400px;	
+	text-align: center;
 }
 
 #ball {
@@ -48,12 +49,9 @@
 	background-color: brown;
 	border-radius: 50%;
 	transition: ease;
-	transition: width 2s;
-	transition: height 2s;
-	-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-	-webkit-transition: height 2s; /* For Safari 3.1 to 6.0 */
+	transition: width 2s, height 2s;
+	-webkit-transition: width 2s, height 2s; /* For Safari 3.1 to 6.0 */
 	top:100px;
-	text-align: center;
 }
 
 #ball:hover {
