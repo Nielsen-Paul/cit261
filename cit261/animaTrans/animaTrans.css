@@ -1,27 +1,4 @@
-/*
-#circle {
-    height: 50px;
-    width: 50px;
-    background-color: #555;
-	border-radius: 50%;
-	animation: jump 1s infinite;
-	-webkit-animation: jump 1s infinite;
-}
 
-@keyframes jump {
-	0% { left:0px; top:200px; }
-	25% { left:25px; top:175px; }
-	50% { left:50px; top:150px; }
-	100% { left:75px; top:125px; }
-}
-
-@-webkit-keyframes jump {
-	0% { left:0px; top:200px; }
-	25% { left:25px; top:175px; }
-	50% { left:50px; top:150px; }
-	100% { left:75px; top:125px; }
-}
-*/
 #soccer {
 	width: 400px;
 	height: 400px;
@@ -41,21 +18,51 @@
 	border-radius: 50px;
     background-color: red;
     position: relative;
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    animation-name: example;
+    -webkit-animation-name: goal; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: goal;
 	animation-duration: 1s;
 	animation-iteration-count: infinite;
 }
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
+@-webkit-keyframes goal {
+	from {left:0px; top:200px;}
+	to {left:200px; top:60px;}
+}
+
+/* Standard syntax */
+@keyframes goal {
 	from {left:0px; top:200px;}
 	to {left:200px; top:50px;}
 }
 
+#football {
+	width: 200px;
+	height: 400px;
+}
+
+#ball {
+	height: 100px;
+	width: 50px;
+	background-color: brown;
+	position: relative;
+	-webkit-animation-name: kick; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: kick;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	transition: width .
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes kick {
+	from {left:100px; top:200px;}
+	to {left:100px; top:50px;}
+}
+
 /* Standard syntax */
-@keyframes example {
+@keyframes kick {
 	from {left:0px; top:200px;}
 	to {left:200px; top:50px;}
 }
