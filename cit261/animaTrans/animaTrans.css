@@ -46,6 +46,7 @@
 #ball {
 	height: 100px;
 	width: 50px;
+	left: 30px;
 	top:100px;
 	background-color: brown;
 	border-radius: 50%;
@@ -57,6 +58,7 @@
 #ball:hover {
 	height: 50px;
 	width: 25px;
+	transition: 2s;
 	transform: rotate(90deg);
 }
 
