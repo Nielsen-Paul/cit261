@@ -60,3 +60,10 @@
 	transform: rotate(90deg);
 }
 
+#goalPost {
+	border-style: none solid solid solid;
+	position: relative;
+	width: 100px;
+	height: 150px;
+}
+
