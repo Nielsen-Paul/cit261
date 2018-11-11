@@ -52,11 +52,11 @@
 	transition: ease;
 	transition: width 2s, height 2s;
 	-webkit-transition: width 2s, height 2s; /* For Safari 3.1 to 6.0 */
-	transform: rotate(90deg);
 }
 
 #ball:hover {
 	height: 50px;
 	width: 25px;
+	transform: rotate(90deg);
 }
 
