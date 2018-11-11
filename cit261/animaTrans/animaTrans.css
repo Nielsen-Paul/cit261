@@ -67,3 +67,11 @@
 	height: 150px;
 }
 
+#goalStand {
+	border-style: none none none solid;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	top: 150px;
+}
+
