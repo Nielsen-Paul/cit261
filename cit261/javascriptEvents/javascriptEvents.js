@@ -6,7 +6,7 @@ function changeAgain(id) {
     id.innerHTML = "Again?!";
 }
 
-document.getElementById("spinningBox").addEventListener("touchstart", spinDiv);
+document.getElementById("spinningBox").ontouchstart = spinDiv;
 
 function spinDiv() {
     alert("Hello");
