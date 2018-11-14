@@ -1,3 +1,3 @@
 function buttonChange(id) {
-    id.value = "Done!";
+    id.innerHTML = "Done!";
 }
