@@ -1,4 +1,9 @@
 
+#boxDiv {
+    height: 200;
+    width: 200;
+}
+
 #spinningBox {
     height: 100px;
     width: 100px;
