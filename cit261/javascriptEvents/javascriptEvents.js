@@ -9,5 +9,7 @@ function changeAgain(id) {
 document.getElementById("spinningBox").ontouchstart = spinDiv;
 
 function spinDiv() {
-    alert("Hello");
+    var box = document.getElementById("spinningBox");
+    box.style.transition = "2s";
+	box.style.transform = "rotate(90deg)";
 }
