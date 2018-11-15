@@ -12,5 +12,7 @@ window.onload=function(){
 }
 
 function spinBox() {
-    alert("Hello");
+    var spinningBox = document.getElementById("spinningBox");
+    spinningBox.style.transition = "2s";
+    spinningBox.style.transform = "rotate(270deg)";
 }
