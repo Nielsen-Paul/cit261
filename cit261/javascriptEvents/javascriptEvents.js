@@ -6,6 +6,11 @@ function changeAgain(id) {
     id.innerHTML = "Again?!";
 }
 
-document.getElementById("spinIt").addEventListener("click", function(){
+window.onload=function(){
+    var box = document.getElementById("spinIt");
+    box.addEventListener("click", spinBox);
+}
+
+function spinBox() {
     alert("Hello");
-});
+}
