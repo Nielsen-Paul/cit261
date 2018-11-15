@@ -8,6 +8,8 @@
 #spinningBox {
     height: 100px;
     width: 100px;
+    top: 50px;
+    margin: auto;
     background-color: blue;
     border-style: solid;
 }

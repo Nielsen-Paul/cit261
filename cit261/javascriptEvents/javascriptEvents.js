@@ -14,5 +14,5 @@ window.onload=function(){
 function spinBox() {
     var spinningBox = document.getElementById("spinningBox");
     spinningBox.style.transition = "2s";
-    spinningBox.style.transform = "rotate(270deg)";
+    spinningBox.style.transform = "rotate(245deg)";
 }
