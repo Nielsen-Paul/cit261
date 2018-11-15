@@ -7,7 +7,7 @@ function changeAgain(id) {
 }
 
 var box = document.getElementById("spinningBox");
-box.addEventListener("touchstart", spinDiv);
+box.addEventListener("click", spinDiv);
 
 function spinDiv() {
     var box = document.getElementById("spinningBox");
