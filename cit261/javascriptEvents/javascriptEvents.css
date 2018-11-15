@@ -14,11 +14,6 @@
     border-style: solid;
 }
 
-#moveIt {
-    height: 200px;
-    width: 200px;
-}
-
 #doNotMove {
 	width: 0;
 	height: 0;
