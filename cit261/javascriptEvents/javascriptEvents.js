@@ -6,7 +6,7 @@ function changeAgain(id) {
     id.innerHTML = "Again?!";
 }
 
-document.getElementById("spinningBox").addEventListener("mouseover", function(){
+document.getElementById("spinIt").addEventListener("click", function(){
     alert("Hello");
     //var box = document.getElementById("spinningBox");
     //box.style.transition = "2s";
