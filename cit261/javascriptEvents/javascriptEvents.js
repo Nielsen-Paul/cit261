@@ -7,8 +7,8 @@ function changeAgain(id) {
 }
 
 window.onload=function(){
-    var box = document.getElementById("spinIt");
-    box.addEventListener("click", spinBox);
+    var box = document.getElementById("spinningBox");
+    box.addEventListener("touchstart", spinBox);
 }
 
 function spinBox() {
