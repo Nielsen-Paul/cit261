@@ -33,9 +33,11 @@ function leaper() {
 
     var button = document.createElement("button");
     var value = document.createTextNode("Leap");
-
+    var id = document.createElement("id");
+    
+    button.setAttribute("leap", ID);
     button.appendChild(value);
-    button.addEventListener("click", leaped);
+    button.addEventListener("click", leaper);
     parent.appendChild(button);
 }
 
@@ -47,33 +49,8 @@ function frogger() {
     var button = document.createElement("button");
     var value = document.createTextNode("Frog");
 
+    button.setAttribute("frog", ID);
     button.appendChild(value);
-    button.addEventListener("click", frogged);
-    parent.appendChild(button);
-}
-
-function leaped() {
-    var parent = document.getElementById("leapFrog");
-    var child = document.getElementById("leap");
-    parent.removeChild(child);
-
-    var button = document.createElement("button");
-    var value = document.createTextNode("Leap");
-
-    button.appendChild(value);
-    button.addEventListener("click", leaped);
-    parent.appendChild(button);
-}
-
-function frogged() {
-    var parent = document.getElementById("leapFrog");
-    var child = document.getElementById("frog");
-    parent.removeChild(child);
-
-    var button = document.createElement("button");
-    var value = document.createTextNode("Frog");
-
-    button.appendChild(value);
-    button.addEventListener("click", frogged);
+    button.addEventListener("click", frogger);
     parent.appendChild(button);
 }
