@@ -39,7 +39,7 @@ function leaper() {
     parent.appendChild(button);
 }
 
-function froger() {
+function frogger() {
     var parent = document.getElementById("leapFrog");
     var child = document.getElementById("frog");
     parent.removeChild(child);
@@ -48,6 +48,6 @@ function froger() {
     var value = document.createTextNode("Frog");
 
     button.appendChild(value);
-    button.addEventListener("click", froger);
+    button.addEventListener("click", frogger);
     parent.appendChild(button);
 }
