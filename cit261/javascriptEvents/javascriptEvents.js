@@ -29,12 +29,12 @@ function doNotMove() {
 function leaper() {
     var parent = document.getElementById("leapFrog");
     var child = document.getElementById("leap");
-    parent2.removeChild(child);
+    parent.removeChild(child);
 
     var button = document.createElement("button");
     var value = document.createTextNode("Leap");
 
     button.appendChild(value);
     button.addEventListener("click", leaper);
-    document.body.appendChild(button);
+    parent.appendChild(button);
 }
