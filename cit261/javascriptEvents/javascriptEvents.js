@@ -35,7 +35,7 @@ function leaper() {
     var value = document.createTextNode("Leap");
     var id = document.createElement("id");
     
-    button.setAttribute("leap", ID);
+    button.setAttribute("id", "leap");
     button.appendChild(value);
     button.addEventListener("click", leaper);
     parent.appendChild(button);
