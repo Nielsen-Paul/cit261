@@ -38,3 +38,16 @@ function leaper() {
     button.addEventListener("click", leaper);
     parent.appendChild(button);
 }
+
+function froger() {
+    var parent = document.getElementById("leapFrog");
+    var child = document.getElementById("frog");
+    parent.removeChild(child);
+
+    var button = document.createElement("button");
+    var value = document.createTextNode("Frog");
+
+    button.appendChild(value);
+    button.addEventListener("click", froger);
+    parent.appendChild(button);
+}
