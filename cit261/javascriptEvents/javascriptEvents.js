@@ -49,7 +49,7 @@ function frogger() {
     var button = document.createElement("button");
     var value = document.createTextNode("Frog");
 
-    button.setAttribute("frog", ID);
+    button.setAttribute("id", "frog");
     button.appendChild(value);
     button.addEventListener("click", frogger);
     parent.appendChild(button);
