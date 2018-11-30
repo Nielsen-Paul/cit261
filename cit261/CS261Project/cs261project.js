@@ -1,6 +1,6 @@
 
 window.onload = function () {
-    document.getElementById('printName').innerHTML = "Welcome back ";
+    document.getElementById('printName').innerHTML = "Welcome back " + localStorage.getItem("name");
     document.getElementById('hiddenTaxDiv').style.display = none;
     document.getElementById('hiddenMedicareDiv').style.display = none;
     document.getElementById('hiddenPocketDiv').style.display = none;
