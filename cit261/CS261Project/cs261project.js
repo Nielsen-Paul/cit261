@@ -1,4 +1,11 @@
 
+window.onload = function () {
+    document.getElementById('printName').innerHTML = "Welcome back ";
+    document.getElementById('hiddenTaxDiv').style.display = none;
+    document.getElementById('hiddenMedicareDiv').style.display = none;
+    document.getElementById('hiddenPocketDiv').style.display = none;
+}
+
 function taxQuote() {
     var name = document.getElementById('name').value;
     var age = document.getElementById('age').value;
@@ -11,6 +18,3 @@ function taxQuote() {
     localStorage.setItem("familySize", familySize);
 }
 
-function printStorage() {
-    document.getElementById('printName').innerHTML = "Welcome back ";
-}
