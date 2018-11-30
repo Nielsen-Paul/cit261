@@ -13,5 +13,5 @@ function taxQuote() {
 
 function printStorage() {
     document.getElementById('printName').innerHTML = 
-    "Welcome back " + localStorage.getItem('name') + "!";
+    "Welcome back ";
 }
