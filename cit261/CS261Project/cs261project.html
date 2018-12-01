@@ -45,7 +45,7 @@
             <form>
                 <input type="text" placeholder="Name" />
                 <input type="text" placeholder="Age" />
-                <button>Submit</button>
+                <button onclick="medicareQuote()">Submit</button>
             </form>
             <p id="medicareQuote"></p>
         </div>
@@ -59,14 +59,14 @@
         <!--Clicking on the Div expands to a form-->
         <div id="hiddenPocketDiv">
             <form>
-                <input type="text" placeholder="Name" />
-                <input type="text" placeholder="Age" />
-                <input type="text" placeholder="Household Income" />
-                <input type="text" placeholder="Family Size" />
+                <input type="text" id="name" placeholder="Name" />
+                <input type="text" id="age" placeholder="Age" />
+                <input type="text" id="income" placeholder="Household Income" />
+                <input type="text" id="familySize" placeholder="Family Size" />
                 <p>Are you or your spouse eligible to receive insurance at work?</p>
-                <label><input type="checkbox" />Yes</label>
-                <label><input type="checkbox" />No</label>
-                <button>Submit</button>
+                <label><input type="radio" name="insuranceEligible" value="yes" />Yes</label>
+                <label><input type="radio" name="insuranceEligible" value="no" />No</label>
+                <button onclick="pocketQuote()">Submit</button>
             </form>
             <p id="pocketQuote"></p>
         </div>
