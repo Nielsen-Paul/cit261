@@ -16,9 +16,9 @@
     <h1>Choose your plan for a quote</h1>
     <!--Three Divs-->
     <div id="taxCredit">
-        <!--Eligable for Tax Credit-->
+        <!--eligible for Tax Credit-->
         <div id="taxDiv">
-            <h2>Click here if you are eligable for an Idaho Tax Credit</h2>
+            <h2>Click here if you are eligible for an Idaho Tax Credit</h2>
         </div>
         <!--Clicking on the Div expands to a form-->
         <!--Hidden form expands and takes up more of the screen-->
@@ -28,18 +28,18 @@
                 <input type="text" id="age" placeholder="Age" />
                 <input type="text" id="income" placeholder="Household Income" />
                 <input type="text" id="familySize" placeholder="Family Size" />
-                <p>Are you or your spouse eligable to receive insurance at work?</p>
-                <label><input type="radio" />Yes</label>
-                <label><input type="radio" />No</label>
+                <p>Are you or your spouse eligible to receive insurance at work?</p>
+                <label><input type="radio" name="insuranceEligible" value="yes" />Yes</label>
+                <label><input type="radio" name="insuranceEligible" value="no" />No</label>
                 <button onclick="taxQuote()">Submit</button>
             </form>
             <p id="taxQuote"></p>
         </div>
     </div>
     <div id="medicare">
-        <!--Eligable for Medicare-->
+        <!--eligible for Medicare-->
         <div id="medicareDiv">
-            <h2>Click here if you are eligable for Medicare</h2>
+            <h2>Click here if you are eligible for Medicare</h2>
         </div>
         <div id="hiddenMedicareDiv">
             <form>
@@ -63,7 +63,7 @@
                 <input type="text" placeholder="Age" />
                 <input type="text" placeholder="Household Income" />
                 <input type="text" placeholder="Family Size" />
-                <p>Are you or your spouse eligable to receive insurance at work?</p>
+                <p>Are you or your spouse eligible to receive insurance at work?</p>
                 <label><input type="checkbox" />Yes</label>
                 <label><input type="checkbox" />No</label>
                 <button>Submit</button>
@@ -72,12 +72,12 @@
         </div>
     </div>
     <div>
-        <!--What makes you eligable for a tax credit-->
-        <h3>Am I eligable for a tax credit?</h3>
+        <!--What makes you eligible for a tax credit-->
+        <h3>Am I eligible for a tax credit?</h3>
     </div>
     <div>
-        <!--What makes you eligable for Medicare-->
-        <h3>Am I eligable for Medicare?</h3>
+        <!--What makes you eligible for Medicare-->
+        <h3>Am I eligible for Medicare?</h3>
     </div>
     <!--Footer-->
 </body>
