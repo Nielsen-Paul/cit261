@@ -43,8 +43,8 @@
         </div>
         <div id="hiddenMedicareDiv">
             <form>
-                <input type="text" placeholder="Name" />
-                <input type="text" placeholder="Age" />
+                <input type="text" id="medicareName" placeholder="Name" />
+                <input type="text" id="medicareAge" placeholder="Age" />
                 <button onclick="medicareQuote()">Submit</button>
             </form>
             <p id="medicareQuote"></p>
@@ -59,10 +59,10 @@
         <!--Clicking on the Div expands to a form-->
         <div id="hiddenPocketDiv">
             <form>
-                <input type="text" id="name" placeholder="Name" />
-                <input type="text" id="age" placeholder="Age" />
-                <input type="text" id="income" placeholder="Household Income" />
-                <input type="text" id="familySize" placeholder="Family Size" />
+                <input type="text" id="pocketName" placeholder="Name" />
+                <input type="text" id="pocketAge" placeholder="Age" />
+                <input type="text" id="pocketIncome" placeholder="Household Income" />
+                <input type="text" id="pocketFamilySize" placeholder="Family Size" />
                 <p>Are you or your spouse eligible to receive insurance at work?</p>
                 <label><input type="radio" name="insuranceEligible" value="yes" />Yes</label>
                 <label><input type="radio" name="insuranceEligible" value="no" />No</label>

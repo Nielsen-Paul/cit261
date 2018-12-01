@@ -12,6 +12,9 @@ window.onload = function () {
     document.getElementById('pocketIncome').value = localStorage.getItem("income");
     document.getElementById('pocketFamilySize').value = localStorage.getItem("familySize");
 
+    document.getElementById('medicareName').value = localStorage.getItem("name");
+    document.getElementById('medicareAge').value = localStorage.getItem("age");   
+
     document.getElementById('hiddenTaxDiv').style.display = none;
     document.getElementById('hiddenMedicareDiv').style.display = none;
     document.getElementById('hiddenPocketDiv').style.display = none;
