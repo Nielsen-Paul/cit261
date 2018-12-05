@@ -14,10 +14,12 @@ body {
 
 #planChoice {
     display: table-row;
+    width: 100%;
 }
 
 #planQuestions {
     display: table-row;
+    width: 100%;
 }
 
 .choices {
