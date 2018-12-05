@@ -19,7 +19,27 @@ body {
     text-align: center;
 }
 
-.choices {
+#taxDiv {
+    height: 100px;
+    width: 30%;
+    background-color: blue;
+    transition: 2s;
+    display: table-cell;
+    position: relative;
+    left: 30px;
+}
+
+#medicareDiv {
+    height: 100px;
+    width: 30%;
+    background-color: blue;
+    transition: 2s;
+    display: table-cell;
+    position: relative;
+    left: 30px;
+}
+
+#pocketDiv {
     height: 100px;
     width: 30%;
     background-color: blue;
