@@ -22,17 +22,17 @@ window.onload = function () {
 
 function taxForm() {
     getElementById('taxDiv').style.display = none;
-    getElementById('hiddenTaxDiv').style.display = table-row;
+    getElementById('hiddenTaxDiv').style.display = block;
 }
 
 function medicareForm() {
     getElementById('medicareDiv').style.display = none;
-    getElementById('hiddenMedicareDiv').style.display = table-row;
+    getElementById('hiddenMedicareDiv').style.display = block;
 }
 
 function pocketForm() {
     getElementById('medicareDiv').style.display = none;
-    getElementById('hiddenMedicareDiv').style.display = table-row;
+    getElementById('hiddenMedicareDiv').style.display = block;
 }
 
 function taxQuote() {
