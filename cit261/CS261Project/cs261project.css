@@ -24,6 +24,7 @@ body {
     height: 100px;
     width: 30%;
     background-color: blue;
+    transition: color 2s;
     display: table-cell;
 }
 
