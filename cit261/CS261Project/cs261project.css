@@ -12,11 +12,15 @@ body {
     text-align: center;
 }
 
+#planChoice {
+    display: table-row;
+}
+
 .choices {
     height: 100px;
     width: 30%;
     background-color: blue;
-    float: left;
+    display: table-cell;
 }
 
 .choices:hover {
