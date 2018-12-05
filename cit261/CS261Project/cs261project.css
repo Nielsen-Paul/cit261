@@ -42,10 +42,12 @@ body {
 
 #taxEligible {
     height: 100px;
+    width: 30%;
     display: table-cell;
 }
 
 #medicareEligible {
     height: 100px;
+    width: 30%;
     display: table-cell;
 }
