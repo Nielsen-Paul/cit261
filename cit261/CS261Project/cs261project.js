@@ -25,6 +25,16 @@ function taxForm() {
     getElementById('hiddenTaxDiv').style.display = table-row;
 }
 
+function medicareForm() {
+    getElementById('medicareDiv').style.display = none;
+    getElementById('hiddenMedicareDiv').style.display = table-row;
+}
+
+function pocketForm() {
+    getElementById('medicareDiv').style.display = none;
+    getElementById('hiddenMedicareDiv').style.display = table-row;
+}
+
 function taxQuote() {
     var name = document.getElementById('name').value;
     var age = document.getElementById('age').value;
