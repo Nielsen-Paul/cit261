@@ -14,71 +14,73 @@
     <h2 id="printName"></h2>
     <h1>Choose your plan for a quote</h1>
     <div id="planChoice">
-    <!--Three Divs-->
-    <div id="taxCredit" class="choices">
-        <!--eligible for Tax Credit-->
-        <div id="taxDiv">
-            <h2>Click here if you are eligible for an Advance Premium Tax Credit</h2>
+        <!--Three Divs-->
+        <div id="taxCredit" class="choices">
+            <!--eligible for Tax Credit-->
+            <div id="taxDiv">
+                <h2>Click here if you are eligible for an Advance Premium Tax Credit</h2>
+            </div>
+            <!--Clicking on the Div expands to a form-->
+            <!--Hidden form expands and takes up more of the screen-->
+            <div id="hiddenTaxDiv" class="hidden">
+                <form>
+                    <input type="text" id="name" placeholder="Name" />
+                    <input type="text" id="age" placeholder="Age" />
+                    <input type="text" id="income" placeholder="Household Income" />
+                    <input type="text" id="familySize" placeholder="Family Size" />
+                    <p>Are you or your spouse eligible to receive insurance at work?</p>
+                    <label><input type="radio" name="insuranceEligible" value="yes" />Yes</label>
+                    <label><input type="radio" name="insuranceEligible" value="no" />No</label>
+                    <button onclick="taxQuote()">Submit</button>
+                </form>
+                <p id="taxQuote"></p>
+            </div>
         </div>
-        <!--Clicking on the Div expands to a form-->
-        <!--Hidden form expands and takes up more of the screen-->
-        <div id="hiddenTaxDiv" class="hidden">
-            <form>
-                <input type="text" id="name" placeholder="Name" />
-                <input type="text" id="age" placeholder="Age" />
-                <input type="text" id="income" placeholder="Household Income" />
-                <input type="text" id="familySize" placeholder="Family Size" />
-                <p>Are you or your spouse eligible to receive insurance at work?</p>
-                <label><input type="radio" name="insuranceEligible" value="yes" />Yes</label>
-                <label><input type="radio" name="insuranceEligible" value="no" />No</label>
-                <button onclick="taxQuote()">Submit</button>
-            </form>
-            <p id="taxQuote"></p>
+        <div id="medicare" class="choices">
+            <!--eligible for Medicare-->
+            <div id="medicareDiv">
+                <h2>Click here if you are eligible for Medicare</h2>
+            </div>
+            <div id="hiddenMedicareDiv" class="hidden">
+                <form>
+                    <input type="text" id="medicareName" placeholder="Name" />
+                    <input type="text" id="medicareAge" placeholder="Age" />
+                    <button onclick="medicareQuote()">Submit</button>
+                </form>
+                <p id="medicareQuote"></p>
+            </div>
+            <!--Clicking on the Div expands to a form-->
         </div>
-    </div>
-    <div id="medicare" class="choices">
-        <!--eligible for Medicare-->
-        <div id="medicareDiv">
-            <h2>Click here if you are eligible for Medicare</h2>
+        <div id="outOfPocket" class="choices">
+            <!--All Out of Pocket-->
+            <div id="pocketDiv">
+                <h2>Click here if you will be paying Out of Pocket</h2>
+            </div>
+            <!--Clicking on the Div expands to a form-->
+            <div id="hiddenPocketDiv" class="hidden">
+                <form>
+                    <input type="text" id="pocketName" placeholder="Name" />
+                    <input type="text" id="pocketAge" placeholder="Age" />
+                    <input type="text" id="pocketIncome" placeholder="Household Income" />
+                    <input type="text" id="pocketFamilySize" placeholder="Family Size" />
+                    <p>Are you or your spouse eligible to receive insurance at work?</p>
+                    <label><input type="radio" name="insuranceEligible" value="yes" />Yes</label>
+                    <label><input type="radio" name="insuranceEligible" value="no" />No</label>
+                    <button onclick="pocketQuote()">Submit</button>
+                </form>
+                <p id="pocketQuote"></p>
+            </div>
         </div>
-        <div id="hiddenMedicareDiv" class="hidden">
-            <form>
-                <input type="text" id="medicareName" placeholder="Name" />
-                <input type="text" id="medicareAge" placeholder="Age" />
-                <button onclick="medicareQuote()">Submit</button>
-            </form>
-            <p id="medicareQuote"></p>
+        <div id="planQuestions">
+            <div>
+                <!--What makes you eligible for a tax credit-->
+                <h3>Am I eligible for a tax credit?</h3>
+            </div>
+            <div>
+                <!--What makes you eligible for Medicare-->
+                <h3>Am I eligible for Medicare?</h3>
+            </div>
         </div>
-        <!--Clicking on the Div expands to a form-->
-    </div>
-    <div id="outOfPocket" class="choices">
-        <!--All Out of Pocket-->
-        <div id="pocketDiv">
-            <h2>Click here if you will be paying Out of Pocket</h2>
-        </div>
-        <!--Clicking on the Div expands to a form-->
-        <div id="hiddenPocketDiv" class="hidden">
-            <form>
-                <input type="text" id="pocketName" placeholder="Name" />
-                <input type="text" id="pocketAge" placeholder="Age" />
-                <input type="text" id="pocketIncome" placeholder="Household Income" />
-                <input type="text" id="pocketFamilySize" placeholder="Family Size" />
-                <p>Are you or your spouse eligible to receive insurance at work?</p>
-                <label><input type="radio" name="insuranceEligible" value="yes" />Yes</label>
-                <label><input type="radio" name="insuranceEligible" value="no" />No</label>
-                <button onclick="pocketQuote()">Submit</button>
-            </form>
-            <p id="pocketQuote"></p>
-        </div>
-    </div>
-    <div>
-        <!--What makes you eligible for a tax credit-->
-        <h3>Am I eligible for a tax credit?</h3>
-    </div>
-    <div>
-        <!--What makes you eligible for Medicare-->
-        <h3>Am I eligible for Medicare?</h3>
-    </div>
     </div>
     <!--Footer-->
 </body>

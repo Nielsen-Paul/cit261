@@ -16,6 +16,10 @@ body {
     display: table-row;
 }
 
+#planQuestions {
+    display: table-row;
+}
+
 .choices {
     height: 100px;
     width: 30%;
