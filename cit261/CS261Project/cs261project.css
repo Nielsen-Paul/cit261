@@ -15,11 +15,7 @@ body {
 #planChoice {
     display: table-row;
     width: 100%;
-}
-
-#planQuestions {
-    display: table-row;
-    width: 100%;
+    padding: 10%;
 }
 
 .choices {
@@ -36,4 +32,20 @@ body {
 
 .hidden {
     display: none;
+}
+
+#planQuestions {
+    display: table-row;
+    width: 100%;
+    padding: 10%;
+}
+
+#taxEligible {
+    height: 100px;
+    display: table-cell;
+}
+
+#medicareEligible {
+    height: 100px;
+    display: table-cell;
 }
