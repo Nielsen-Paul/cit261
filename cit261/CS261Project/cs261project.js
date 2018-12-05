@@ -20,6 +20,11 @@ window.onload = function () {
     document.getElementById('hiddenPocketDiv').style.display = none;
 }
 
+function taxForm() {
+    getElementById('taxDiv').style.display = none;
+    getElementById('hiddenTaxDiv').style.display = table-row;
+}
+
 function taxQuote() {
     var name = document.getElementById('name').value;
     var age = document.getElementById('age').value;
