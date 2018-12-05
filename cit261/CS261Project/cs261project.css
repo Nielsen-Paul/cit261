@@ -25,6 +25,8 @@ body {
     background-color: blue;
     transition: 2s;
     display: table-cell;
+    position: relative;
+    left: 30px;
 }
 
 .choices:hover {
@@ -45,10 +47,14 @@ body {
     height: 100px;
     width: 30%;
     display: table-cell;
+    position: relative;
+    left: 30px;
 }
 
 #medicareEligible {
     height: 100px;
     width: 30%;
     display: table-cell;
+    position: relative;
+    left: 30px;
 }
