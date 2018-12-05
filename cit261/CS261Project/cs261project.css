@@ -29,6 +29,10 @@ body {
     left: 50px;
 }
 
+taxCredit:hover {
+    background-color: aqua;
+}
+
 #medicare {
     height: 100px;
     width: 30%;
@@ -37,6 +41,10 @@ body {
     float: left;
     position: relative;
     left: 50px;
+}
+
+#medicare:hover {
+    background-color: aqua;
 }
 
 #outOfPocket {
@@ -49,7 +57,7 @@ body {
     left: 50px;
 }
 
-.choices:hover {
+#outOfPocket:hover {
     background-color: aqua;
 }
 
