@@ -22,7 +22,6 @@ window.onload = function () {
 
 function taxForm() {
     getElementById('taxDiv').style.display = none;
-    getElementById('hiddenTaxDiv').style.display = table-row;
 }
 
 function taxQuote() {
