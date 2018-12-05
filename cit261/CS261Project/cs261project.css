@@ -21,3 +21,7 @@ body {
 .choices:hover {
     background-color: aqua;
 }
+
+.hidden {
+    display: none;
+}
