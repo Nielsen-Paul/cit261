@@ -16,6 +16,8 @@ body {
     height: 100px;
     width: 30%;
     background-color: blue;
+    display: inline;
+    text-align: center;
 }
 
 .choices:hover {
