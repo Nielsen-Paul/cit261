@@ -24,7 +24,7 @@ body {
     width: 30%;
     background-color: blue;
     transition: 2s;
-    display: table-cell;
+    float: left;
     position: relative;
     left: 30px;
 }
@@ -34,7 +34,7 @@ body {
     width: 30%;
     background-color: blue;
     transition: 2s;
-    display: table-cell;
+    float: left;
     position: relative;
     left: 30px;
 }
@@ -44,7 +44,7 @@ body {
     width: 30%;
     background-color: blue;
     transition: 2s;
-    display: table-cell;
+    float: left;
     position: relative;
     left: 30px;
 }
@@ -66,7 +66,7 @@ body {
 #taxEligible {
     height: 100px;
     width: 30%;
-    display: table-cell;
+    float: left;
     position: relative;
     left: 50px;
     text-align: center;
@@ -75,7 +75,7 @@ body {
 #medicareEligible {
     height: 100px;
     width: 30%;
-    display: table-cell;
+    float: left;
     position: relative;
     left: 50px;
     text-align: center;
