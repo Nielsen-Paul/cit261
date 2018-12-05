@@ -33,6 +33,10 @@ body {
     background-color: aqua;
 }
 
+#taxDiv {
+    display: block;
+}
+
 #medicare {
     height: 100px;
     width: 30%;
