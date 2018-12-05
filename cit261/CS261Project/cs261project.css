@@ -19,7 +19,7 @@ body {
     text-align: center;
 }
 
-#taxDiv {
+#taxCredit {
     height: 100px;
     width: 30%;
     background-color: blue;
@@ -29,7 +29,7 @@ body {
     left: 30px;
 }
 
-#medicareDiv {
+#medicare {
     height: 100px;
     width: 30%;
     background-color: blue;
@@ -39,7 +39,7 @@ body {
     left: 30px;
 }
 
-#pocketDiv {
+#outOfPocket {
     height: 100px;
     width: 30%;
     background-color: blue;
