@@ -48,7 +48,7 @@ body {
     width: 30%;
     display: table-cell;
     position: relative;
-    left: 30px;
+    left: 50px;
 }
 
 #medicareEligible {
@@ -56,5 +56,5 @@ body {
     width: 30%;
     display: table-cell;
     position: relative;
-    left: 30px;
+    left: 50px;
 }
