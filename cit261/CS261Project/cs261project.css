@@ -55,6 +55,14 @@ body {
     background-color: aqua;
 }
 
+#medicareDiv {
+    display: block;
+}
+
+#hiddenMedicareDiv {
+    display: none;
+}
+
 #outOfPocket {
     height: 100px;
     width: 30%;
@@ -67,6 +75,14 @@ body {
 
 #outOfPocket:hover {
     background-color: aqua;
+}
+
+#pocketDiv {
+    display: block;
+}
+
+#hiddenPocketDiv {
+    display: none;
 }
 
 .hidden {
