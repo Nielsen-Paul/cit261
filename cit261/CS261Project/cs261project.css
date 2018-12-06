@@ -37,6 +37,10 @@ body {
     display: block;
 }
 
+#hiddenTaxDiv {
+    display: none;
+}
+
 #medicare {
     height: 100px;
     width: 30%;
