@@ -17,18 +17,18 @@ window.onload = function () {
 }
 
 function taxForm() {
-    document.getElementById('taxDiv').style.display = none;
-    document.getElementById('hiddenTaxDiv').style.display = block;
+    document.getElementById('taxDiv').style.display = "none";
+    document.getElementById('hiddenTaxDiv').style.display = "block";
 }
 
 function medicareForm() {
-    document.getElementById('medicareDiv').style.display = none;
-    document.getElementById('hiddenMedicareDiv').style.display = block;
+    document.getElementById('medicareDiv').style.display = "none";
+    document.getElementById('hiddenMedicareDiv').style.display = "block";
 }
 
 function pocketForm() {
-    document.getElementById('medicareDiv').style.display = none;
-    document.getElementById('hiddenMedicareDiv').style.display = block;
+    document.getElementById('medicareDiv').style.display = "none";
+    document.getElementById('hiddenMedicareDiv').style.display = "block";
 }
 
 function taxQuote() {
