@@ -15,18 +15,20 @@ body {
 #planChoice {
     display: table-row;
     width: 100%;
+    height: 200px;
     padding: 10%;
     text-align: center;
 }
 
 #taxCredit {
-    height: 100px;
+    height: 150px;
     width: 30%;
     background-color: blue;
     transition: 2s;
     float: left;
     position: relative;
     left: 50px;
+    padding: 10px;
 }
 
 #taxCredit:hover {
@@ -42,13 +44,14 @@ body {
 }
 
 #medicare {
-    height: 100px;
+    height: 150px;
     width: 30%;
     background-color: blue;
     transition: 2s;
     float: left;
     position: relative;
     left: 50px;
+    padding: 10px;
 }
 
 #medicare:hover {
@@ -64,13 +67,14 @@ body {
 }
 
 #outOfPocket {
-    height: 100px;
+    height: 150px;
     width: 30%;
     background-color: blue;
     transition: 2s;
     float: left;
     position: relative;
     left: 50px;
+    padding: 10px;
 }
 
 #outOfPocket:hover {
