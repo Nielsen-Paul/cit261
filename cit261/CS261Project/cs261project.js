@@ -27,8 +27,8 @@ function medicareForm() {
 }
 
 function pocketForm() {
-    document.getElementById('medicareDiv').style.display = "none";
-    document.getElementById('hiddenMedicareDiv').style.display = "block";
+    document.getElementById('pocketDiv').style.display = "none";
+    document.getElementById('hiddenPocketDiv').style.display = "block";
 }
 
 function taxQuote() {
