@@ -19,7 +19,7 @@ window.onload = function () {
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             var myArr = JSON.parse(this.responseText);
-            document.getElementById("ajaxTest").innerHTML = myArr.age[0];
+            document.getElementById("ajaxTest").innerHTML = myArr.ages[0];
         }
     };
     xmlhttp.open("GET", "payments.txt", true);
