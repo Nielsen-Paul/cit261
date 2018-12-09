@@ -14,6 +14,17 @@ window.onload = function () {
 
     document.getElementById('medicareName').value = localStorage.getItem("name");
     document.getElementById('medicareAge').value = localStorage.getItem("age");
+
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var myArr = JSON.parse(this.responseText);
+            document.getElementById("ajaxTest").innerHTML = myArr[0];
+        }
+    };
+    xmlhttp.open("GET", "payments.txt", true);
+    xmlhttp.send();
+
 }
 
 function taxForm() {
