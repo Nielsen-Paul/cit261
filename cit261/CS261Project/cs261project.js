@@ -20,7 +20,14 @@ window.onload = function () {
         if (this.readyState == 4 && this.status == 200) {
             var myArr = JSON.parse(this.responseText);
             var age = localStorage.getItem("age") - 20;
-            document.getElementById("ajaxTest").innerHTML = myArr.ages[age];
+            var family = localStorage.getItem("familySize");
+            var bronze = myArr.medal[0] * myArr.ages[age];
+            var silver = myArr.medal[1] * myArr.ages[age];
+            var gold = myArr.medal[2] * myArr.ages[age];
+            document.getElementById("ajaxTest").innerHTML = 
+            "At " + myArr.ages[age] + " years old and with a family size of " +
+            family + " here are the monthly payment options: <br>" + 
+            "Bronze: " + bronze + " Silver: " + silver + " Gold: " + gold;
         }
     };
     xmlhttp.open("GET", "payments.txt", true);
