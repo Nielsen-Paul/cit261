@@ -100,7 +100,7 @@ body {
 }
 
 #taxEligible {
-    height: 100px;
+    height: 50px;
     width: 30%;
     float: left;
     position: relative;
@@ -120,10 +120,9 @@ body {
 }
 
 #medicareEligible {
-    height: 100px;
+    height: 50px;
     width: 30%;
     float: left;
-    position: relative;
     text-align: center;
     margin: 10px;
     background-color: red;
