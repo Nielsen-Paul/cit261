@@ -96,7 +96,7 @@ body {
 #planQuestions {
     display: table-row;
     width: 100%;
-    margin: 10%;
+    margin: 10px;
 }
 
 #taxEligible {
@@ -106,6 +106,16 @@ body {
     position: relative;
     left: 50px;
     text-align: center;
+    margin: 10px;
+    background-color: indianred;
+    animation-name: colorChange;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorChange {
+    from {background-color: indianred;}
+    to {background-color: cornflowerblue;}
 }
 
 #medicareEligible {
@@ -114,4 +124,5 @@ body {
     float: left;
     position: relative;
     text-align: center;
+    margin: 10px;
 }
