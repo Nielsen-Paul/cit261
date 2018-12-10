@@ -16,7 +16,6 @@ body {
     display: table-row;
     width: 100%;
     height: 200px;
-    margin: 10%;
     text-align: center;
 }
 
@@ -158,7 +157,7 @@ i {
 }
 
 .downArrows {
-    height: 200px;
+    height: 150px;
     width: 100%;
     background-color: lightseagreen;
     animation-name: moveArrows;
@@ -168,8 +167,8 @@ i {
 
 @keyframes moveArrows {
     0% {top: 0px;}
-    25% {top: 50px;}
-    50% {top: 100px;}
-    75% {top: 150px;}
-    100% {top: 200px;}
+    25% {top: 25px;}
+    50% {top: 50px;}
+    75% {top: 75px;}
+    100% {top: 100px;}
 }
