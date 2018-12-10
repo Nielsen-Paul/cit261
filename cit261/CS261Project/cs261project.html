@@ -24,13 +24,11 @@
             <!--Hidden form expands and takes up more of the screen-->
             <div id="hiddenTaxDiv" class="hidden">
                 <form>
+                    <h3>Tax Credit Form</h3>
                     <input type="text" id="name" placeholder="Name" />
                     <input type="text" id="age" placeholder="Age" />
                     <input type="text" id="income" placeholder="Household Income" />
                     <input type="text" id="familySize" placeholder="Family Size" />
-                    <p>Are you or your spouse eligible to receive insurance at work?</p>
-                    <label><input type="radio" name="insuranceEligible" value="yes" />Yes</label>
-                    <label><input type="radio" name="insuranceEligible" value="no" />No</label>
                     <button onclick="taxQuote()">Submit</button>
                 </form>
                 <p id="taxQuote"></p>
@@ -43,6 +41,7 @@
             </div>
             <div id="hiddenMedicareDiv" class="hidden">
                 <form>
+                    <h3>Medicare Form</h3>
                     <input type="text" id="medicareName" placeholder="Name" />
                     <input type="text" id="medicareAge" placeholder="Age" />
                     <button onclick="medicareQuote()">Submit</button>
@@ -59,13 +58,11 @@
             <!--Clicking on the Div expands to a form-->
             <div id="hiddenPocketDiv" class="hidden">
                 <form>
+                    <h3>Out of Pocket Form</h3>
                     <input type="text" id="pocketName" placeholder="Name" />
                     <input type="text" id="pocketAge" placeholder="Age" />
                     <input type="text" id="pocketIncome" placeholder="Household Income" />
                     <input type="text" id="pocketFamilySize" placeholder="Family Size" />
-                    <p>Are you or your spouse eligible to receive insurance at work?</p>
-                    <label><input type="radio" name="insuranceEligible" value="yes" />Yes</label>
-                    <label><input type="radio" name="insuranceEligible" value="no" />No</label>
                     <button onclick="pocketQuote()">Submit</button>
                 </form>
                 <p id="pocketQuote"></p>
