@@ -62,7 +62,7 @@ function taxQuote() {
     localStorage.setItem("familySize", familySize);
 
     document.getElementById('hiddenTaxDiv').style.display = "none";
-    document.getElementById('hiddenTaxQuote').style.display = "block";
+    document.getElementById('hiddenQuote').style.display = "block";
 }
 
 function medicareQuote() {
@@ -73,7 +73,7 @@ function medicareQuote() {
     localStorage.setItem("age", age);
 
     document.getElementById('hiddenMedicareDiv').style.display = "none";
-    document.getElementById('hiddenMedicareQuote').style.display = "block";
+    document.getElementById('hiddenQuote').style.display = "block";
 }
 
 function pocketQuote() {
@@ -88,6 +88,6 @@ function pocketQuote() {
     localStorage.setItem("familySize", familySize);
 
     document.getElementById('hiddenPocketDiv').style.display = "none";
-    document.getElementById('hiddenPocketQuote').style.display = "block";
+    document.getElementById('hiddenQuote').style.display = "block";
 }
 

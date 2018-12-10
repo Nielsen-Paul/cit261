@@ -140,15 +140,7 @@ body {
     100% {background-color: blue;}
 }
 
-#hiddenTaxQuote {
-    display: none;
-}
-
-#hiddenMedicareQuote {
-    display: none;
-}
-
-#hiddenPocketQuote {
+#hiddenQuote {
     display: none;
 }
 

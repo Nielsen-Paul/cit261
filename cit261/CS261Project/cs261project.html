@@ -34,10 +34,6 @@
                 <button onclick="taxQuote()">Submit</button>
                 <p id="taxQuote"></p>
             </div>
-            <div id="hiddenTaxQuote">
-                <p>Quote at the bottom of the page!</p>
-                <p class="downArrows"><i class="arrowDown"></i><i class="arrowDown"></i><i class="arrowDown"></i></p>
-            </div>
         </div>
         <div id="medicare" class="choices" onclick="medicareForm()">
             <!--eligible for Medicare-->
@@ -54,10 +50,6 @@
                 </form>
                 <button onclick="medicareQuote()">Submit</button>
                 <p id="medicareQuote"></p>
-            </div>
-            <div id="hiddenMedicareQuote">
-                <p>Quote at the bottom of the page!</p>
-                <p class="downArrows"><i class="arrowDown"></i><i class="arrowDown"></i><i class="arrowDown"></i></p>
             </div>
         </div>
         <div id="outOfPocket" class="choices" onclick="pocketForm()">
@@ -78,13 +70,13 @@
                 <button onclick="pocketQuote()">Submit</button>
                 <p id="pocketQuote"></p>
             </div>
-            <div id="hiddenPocketQuote">
-                <p>Quote at the bottom of the page!</p><br />
-                <p class="downArrows"><i class="arrowDown"></i><i class="arrowDown"></i><i class="arrowDown"></i></p>
-            </div>
         </div>
         <br>
     </div>
+    <div id="hiddenQuote">
+            <p>Quote at the bottom of the page!</p>
+            <p class="downArrows"><i class="arrowDown"></i><i class="arrowDown"></i><i class="arrowDown"></i></p>
+        </div>
     <div id="planQuestions">
         <div id="taxEligible">
             <!--What makes you eligible for a tax credit-->
