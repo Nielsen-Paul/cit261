@@ -160,7 +160,7 @@ i {
 .downArrows {
     height: 200px;
     width: 100%;
-    background-color: aliceblue;
+    background-color: lightseagreen;
     animation-name: moveArrows;
     animation-duration: 3s;
     animation-iteration-count: infinite;
