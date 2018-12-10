@@ -130,13 +130,11 @@ body {
     background-color: red;
     animation-name: multiColorChange;
     animation-duration: 4s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: alternate;
 }
 
 @keyframes multiColorChange {
     0% {background-color: red;}
-    25% {background-color: yellow;}
-    50% {background-color: green;}
-    75% {background-color: blue;}
-    100% {background-color: rgb(94, 9, 94);}
+    50% {background-color: yellow;}
+    100% {background-color: blue;}
 }
