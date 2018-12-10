@@ -65,3 +65,29 @@ function taxQuote() {
     document.getElementById('hiddenTaxQuote').style.display = "block";
 }
 
+function medicareQuote() {
+    var name = document.getElementById('medicareName').value;
+    var age = document.getElementById('medicareAge').value;
+
+    localStorage.setItem("name", name);
+    localStorage.setItem("age", age);
+
+    document.getElementById('hiddenMedicareDiv').style.display = "none";
+    document.getElementById('hiddenMedicareQuote').style.display = "block";
+}
+
+function pocketQuote() {
+    var name = document.getElementById('pocketName').value;
+    var age = document.getElementById('pocketAge').value;
+    var income = document.getElementById('pocketIncome').value;
+    var familySize = document.getElementById('pocketFamilySize').value;
+
+    localStorage.setItem("name", name);
+    localStorage.setItem("age", age);
+    localStorage.setItem("income", income);
+    localStorage.setItem("familySize", familySize);
+
+    document.getElementById('hiddenPocketDiv').style.display = "none";
+    document.getElementById('hiddenPocketQuote').style.display = "block";
+}
+
