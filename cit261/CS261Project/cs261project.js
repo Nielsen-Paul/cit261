@@ -60,5 +60,8 @@ function taxQuote() {
     localStorage.setItem("age", age);
     localStorage.setItem("income", income);
     localStorage.setItem("familySize", familySize);
+
+    document.getElementById('hiddenTaxDiv').style.display = "none";
+    document.getElementById('hiddenTaxQuote').style.display = "block";
 }
 
