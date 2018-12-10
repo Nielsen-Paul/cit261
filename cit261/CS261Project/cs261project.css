@@ -122,8 +122,10 @@ body {
 #medicareEligible {
     height: 50px;
     width: 30%;
-    float: left;
     text-align: center;
+    float: left;
+    position: relative;
+    left: 50px;
     margin: 10px;
     background-color: red;
     animation-name: multiColorChange;
