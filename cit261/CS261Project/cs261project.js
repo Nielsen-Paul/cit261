@@ -39,33 +39,33 @@ function taxForm() {
     document.getElementById('taxDiv').style.display = "none";
     document.getElementById('hiddenTaxDiv').style.display = "block";
 
-    document.getElementById("hiddenTaxDiv").style.WebkitTransition = "all 2s";
-    document.getElementById("hiddenTaxDiv").style.transition = "all 2s";
+    document.getElementById("taxCredit").style.WebkitTransition = "all 2s";
+    document.getElementById("taxCredit").style.transition = "all 2s";
 
-    document.getElementById('hiddenTaxDiv').style.height = "150px";
-    document.getElementById('hiddenTaxDiv').style.width = "100%";
+    document.getElementById('taxCredit').style.height = "300px";
+    document.getElementById('taxCredit').style.width = "40%";
 }
 
 function medicareForm() {
     document.getElementById('medicareDiv').style.display = "none";
     document.getElementById('hiddenMedicareDiv').style.display = "block";
 
-    document.getElementById("hiddenMedicareDiv").style.WebkitTransition = "all 2s";
-    document.getElementById("hiddenMedicareDiv").style.transition = "all 2s";
+    document.getElementById("medicare").style.WebkitTransition = "all 2s";
+    document.getElementById("medicare").style.transition = "all 2s";
 
-    document.getElementById('hiddenMedicareDiv').style.height = "150px";
-    document.getElementById('hiddenMedicareDiv').style.width = "100%";
+    document.getElementById('medicare').style.height = "300px";
+    document.getElementById('medicare').style.width = "40%";
 }
 
 function pocketForm() {
     document.getElementById('pocketDiv').style.display = "none";
     document.getElementById('hiddenPocketDiv').style.display = "block";
 
-    document.getElementById("hiddenPocketDiv").style.WebkitTransition = "all 2s";
-    document.getElementById("hiddenPocketDiv").style.transition = "all 2s";
+    document.getElementById("outOfPocket").style.WebkitTransition = "all 2s";
+    document.getElementById("outOfPocket").style.transition = "all 2s";
 
-    document.getElementById('hiddenPocketDiv').style.height = "150px";
-    document.getElementById('hiddenPocketDiv').style.width = "100%";
+    document.getElementById('outOfPocket').style.height = "300px";
+    document.getElementById('outOfPocket').style.width = "40%";
 }
 
 function taxQuote() {
