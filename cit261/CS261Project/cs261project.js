@@ -49,11 +49,23 @@ function taxForm() {
 function medicareForm() {
     document.getElementById('medicareDiv').style.display = "none";
     document.getElementById('hiddenMedicareDiv').style.display = "block";
+
+    document.getElementById("hiddenMedicareDiv").style.WebkitTransition = "all 2s";
+    document.getElementById("hiddenMedicareDiv").style.transition = "all 2s";
+
+    document.getElementById('hiddenMedicareDiv').style.height = "150px";
+    document.getElementById('hiddenMedicareDiv').style.width = "100%";
 }
 
 function pocketForm() {
     document.getElementById('pocketDiv').style.display = "none";
     document.getElementById('hiddenPocketDiv').style.display = "block";
+
+    document.getElementById("hiddenPocketDiv").style.WebkitTransition = "all 2s";
+    document.getElementById("hiddenPocketDiv").style.transition = "all 2s";
+
+    document.getElementById('hiddenPocketDiv').style.height = "150px";
+    document.getElementById('hiddenPocketDiv').style.width = "100%";
 }
 
 function taxQuote() {
