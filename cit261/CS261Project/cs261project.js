@@ -43,7 +43,6 @@ function taxForm() {
     document.getElementById("taxCredit").style.transition = "all 2s";
 
     document.getElementById('taxCredit').style.height = "300px";
-    document.getElementById('taxCredit').style.width = "40%";
 }
 
 function medicareForm() {
@@ -54,7 +53,6 @@ function medicareForm() {
     document.getElementById("medicare").style.transition = "all 2s";
 
     document.getElementById('medicare').style.height = "300px";
-    document.getElementById('medicare').style.width = "40%";
 }
 
 function pocketForm() {
@@ -65,7 +63,6 @@ function pocketForm() {
     document.getElementById("outOfPocket").style.transition = "all 2s";
 
     document.getElementById('outOfPocket').style.height = "300px";
-    document.getElementById('outOfPocket').style.width = "40%";
 }
 
 function taxQuote() {
