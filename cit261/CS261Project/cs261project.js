@@ -38,6 +38,12 @@ window.onload = function () {
 function taxForm() {
     document.getElementById('taxDiv').style.display = "none";
     document.getElementById('hiddenTaxDiv').style.display = "block";
+
+    document.getElementById("hiddenTaxDiv").style.WebkitTransition = "all 2s";
+    document.getElementById("hiddenTaxDiv").style.transition = "all 2s";
+
+    document.getElementById('hiddenTaxDiv').style.height = "150px";
+    document.getElementById('hiddenTaxDiv').style.width = "30%";
 }
 
 function medicareForm() {
