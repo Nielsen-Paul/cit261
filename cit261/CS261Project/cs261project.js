@@ -43,7 +43,7 @@ function taxForm() {
     document.getElementById("hiddenTaxDiv").style.transition = "all 2s";
 
     document.getElementById('hiddenTaxDiv').style.height = "150px";
-    document.getElementById('hiddenTaxDiv').style.width = "30%";
+    document.getElementById('hiddenTaxDiv').style.width = "100%";
 }
 
 function medicareForm() {
