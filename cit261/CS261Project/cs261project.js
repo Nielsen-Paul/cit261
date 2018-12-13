@@ -1,7 +1,7 @@
 
 window.onload = function () {
-    if (!localStorage.getItem("name")) {
-    document.getElementById('printName').innerHTML = "Welcome back " + localStorage.getItem("name");
+    if (localStorage.getItem("name")) {
+        document.getElementById('printName').innerHTML = "Welcome back " + localStorage.getItem("name");
     }
 
     document.getElementById('name').value = localStorage.getItem("name");
