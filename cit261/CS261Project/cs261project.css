@@ -240,9 +240,9 @@ i {
 }
 
 @keyframes moveArrows {
-    0% { background-color: lightblue; }
-    50% { background-color: rgb(29, 29, 243); }
-    100% { background-color: rgb(2, 2, 58); }
+    0% { border-color: lightblue; }
+    50% { border-color: rgb(29, 29, 243); }
+    100% { border-color: rgb(2, 2, 58); }
 }
 
 
