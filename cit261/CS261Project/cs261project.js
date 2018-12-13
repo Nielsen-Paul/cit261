@@ -36,6 +36,8 @@ window.onload = function () {
 
     if (localStorage.getItem("quoteFile")) {
         quoteJSON = localStorage.getItem("quoteFile");
+        age = localStorage.getItem("age");
+        familySize = localStorage.getItem("familySize");
     
         document.getElementById('hiddenQuote').style.display = "block";
     
