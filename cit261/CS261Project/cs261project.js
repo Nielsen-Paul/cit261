@@ -68,7 +68,7 @@ function pocketForm() {
 
 function taxQuote() {
     var name = document.getElementById('name').value;
-    var age = document.getElementById('age').value - 20;
+    var age = Number(document.getElementById('age').value) - 20;
     var income = document.getElementById('income').value;
     var familySize = document.getElementById('familySize').value;
 
