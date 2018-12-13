@@ -112,3 +112,13 @@ function pocketQuote() {
     document.getElementById('hiddenQuote').style.display = "block";
 }
 
+function taxAnswer() {
+    document.getElementById('taxEligible').style.display = "none";
+    document.getElementById('hiddenTaxEligible').style.display = "block";
+}
+
+function medicareAnswer() {
+    document.getElementById('medicareEligible').style.display = "none";
+    document.getElementById('hiddenMedicareEligible').style.display = "block";
+}
+
