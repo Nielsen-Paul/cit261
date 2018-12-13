@@ -1,4 +1,5 @@
 var myArr;
+var quoteFile;
 
 window.onload = function () {
     if (localStorage.getItem("name")) {
@@ -21,20 +22,20 @@ window.onload = function () {
     document.getElementById('hiddenTaxEligible').style.display = "none";
     document.getElementById('hiddenMedicareEligible').style.display = "none";
 
-    if (!localStorage.getItem("quoteFile")) {
+    if (!localStorage.getItem(quoteFile)) {
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 myArr = JSON.parse(this.responseText);
-                localStorage.setItem("quoteFile", myArr);
+                localStorage.setItem(quoteFile, myArr);
             }
         };
         xmlhttp.open("GET", "payments.txt", true);
         xmlhttp.send();
     }
 
-    if (localStorage.getItem("quoteFile")) {
-        quoteJSON = localStorage.getItem("quoteFile");
+    if (localStorage.getItem(quoteFile)) {
+        quoteJSON = localStorage.getItem(quoteFile);
     
         document.getElementById('hiddenQuote').style.display = "block";
     
