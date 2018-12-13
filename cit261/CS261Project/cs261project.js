@@ -1,7 +1,5 @@
 
 window.onload = function () {
-    var quoteFile = localStorage.getItem("quoteFile");
-
     if (localStorage.getItem("name")) {
         document.getElementById('printName').innerHTML = "Welcome back " + localStorage.getItem("name");
     }
@@ -22,7 +20,7 @@ window.onload = function () {
     document.getElementById('hiddenTaxEligible').style.display = "none";
     document.getElementById('hiddenMedicareEligible').style.display = "none";
 
-    if (!quoteFile) {
+    if (!localStorage.getItem("quoteFile")) {
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
