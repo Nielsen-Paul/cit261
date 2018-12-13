@@ -212,7 +212,7 @@ i {
 }
 
 .downArrows1 {
-    height: 50px;
+    height: 20px;
     width: 100%;
     animation-name: moveArrows;
     animation-duration: 3s;
@@ -226,7 +226,7 @@ i {
 }
 
 .downArrows2 {
-    height: 50px;
+    height: 20px;
     width: 100%;
     animation-name: moveArrows;
     animation-duration: 3s;
@@ -235,7 +235,7 @@ i {
 }
 
 .downArrows3 {
-    height: 50px;
+    height: 20px;
     width: 100%;
     animation-name: moveArrows;
     animation-duration: 3s;
