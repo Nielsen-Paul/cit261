@@ -22,7 +22,7 @@ window.onload = function () {
     document.getElementById('hiddenTaxEligible').style.display = "none";
     document.getElementById('hiddenMedicareEligible').style.display = "none";
 
-    if (!localStorage.getItem(quoteFile)) {
+    if (!localStorage.getItem("quoteFile")) {
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
@@ -34,8 +34,8 @@ window.onload = function () {
         xmlhttp.send();
     }
 
-    if (localStorage.getItem(quoteFile)) {
-        quoteJSON = localStorage.getItem(quoteFile);
+    if (localStorage.getItem("quoteFile")) {
+        quoteJSON = localStorage.getItem("quoteFile");
     
         document.getElementById('hiddenQuote').style.display = "block";
     
