@@ -18,23 +18,26 @@ window.onload = function () {
     document.getElementById('hiddenTaxEligible').style.display = "none";
     document.getElementById('hiddenMedicareEligible').style.display = "none";
 
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            var myArr = JSON.parse(this.responseText);
-            var age = localStorage.getItem("age") - 20;
-            var familySize = localStorage.getItem("familySize");
-            var bronze = myArr.medal[0] * myArr.amounts[age] + myArr.family[familySize - 1];
-            var silver = myArr.medal[1] * myArr.amounts[age] + myArr.family[familySize - 1];
-            var gold = myArr.medal[2] * myArr.amounts[age] + myArr.family[familySize - 1];
-            document.getElementById("ajaxTest").innerHTML = 
-            "At " + myArr.ages[age] + " years old and with a family size of " +
-            familySize + " here are the monthly payment options: <br>" + 
-            "Bronze: " + bronze + " Silver: " + silver + " Gold: " + gold;
-        }
-    };
-    xmlhttp.open("GET", "payments.txt", true);
-    xmlhttp.send();
+    if (!localStorage.getItem(quoteFile)) {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var myArr = JSON.parse(this.responseText);
+                localStorage.setItem(quoteFile, myArr);
+                var age = localStorage.getItem("age") - 20;
+                var familySize = localStorage.getItem("familySize");
+                var bronze = myArr.medal[0] * myArr.amounts[age] + myArr.family[familySize - 1];
+                var silver = myArr.medal[1] * myArr.amounts[age] + myArr.family[familySize - 1];
+                var gold = myArr.medal[2] * myArr.amounts[age] + myArr.family[familySize - 1];
+                document.getElementById("ajaxTest").innerHTML =
+                    "At " + myArr.ages[age] + " years old and with a family size of " +
+                    familySize + " here are the monthly payment options: <br>" +
+                    "Bronze: " + bronze + " Silver: " + silver + " Gold: " + gold;
+            }
+        };
+        xmlhttp.open("GET", "payments.txt", true);
+        xmlhttp.send();
+    }
 
 }
 
