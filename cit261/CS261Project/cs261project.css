@@ -140,6 +140,17 @@ body {
     transition: 0.5s;
 }
 
+#hiddenTaxEligible {
+    height: 100px;
+    width: 30%;
+    float: left;
+    position: relative;
+    margin: 10px;
+    left: 50px;
+    background-color: indianred;
+    display: "none";
+}
+
 @keyframes colorChange {
     from {background-color: indianred;}
     to {background-color: cornflowerblue;}
@@ -162,6 +173,17 @@ body {
 #medicareEligible:hover {
     border-radius: 50%;
     transition: 0.5s;
+}
+
+#hiddenMedicareEligible {
+    height: 100px;
+    width: 30%;
+    float: left;
+    position: relative;
+    margin: 10px;
+    left: 50px;
+    background-color: red;
+    display: "none";
 }
 
 @keyframes multiColorChange {
