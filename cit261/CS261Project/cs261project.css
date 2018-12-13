@@ -118,6 +118,7 @@ body {
 #planQuestions {
     width: 100%;
     height: 150px;
+    background-color: lightseagreen;
     text-align: center;
     position: relative;
 }
@@ -213,7 +214,6 @@ i {
 .downArrows1 {
     height: 50px;
     width: 100%;
-    background-color: lightseagreen;
     animation-name: moveArrows;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -230,7 +230,6 @@ i {
 .downArrows2 {
     height: 50px;
     width: 100%;
-    background-color: lightseagreen;
     animation-name: moveArrows;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -239,7 +238,6 @@ i {
 .downArrows3 {
     height: 50px;
     width: 100%;
-    background-color: lightseagreen;
     animation-name: moveArrows;
     animation-duration: 3s;
     animation-iteration-count: infinite;
