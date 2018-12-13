@@ -159,7 +159,7 @@ body {
     animation-direction: alternate;
 }
 
-#medicareEligible {
+#medicareEligible:hover {
     border-radius: 50%;
     transition: 0.5s;
 }
