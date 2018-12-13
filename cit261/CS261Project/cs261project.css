@@ -210,8 +210,8 @@ i {
     margin: 20px;
 }
 
-.downArrows {
-    height: 150px;
+.downArrows1 {
+    height: 50px;
     width: 100%;
     background-color: lightseagreen;
     animation-name: moveArrows;
@@ -226,3 +226,22 @@ i {
     75% {top: 75px;}
     100% {top: 100px;}
 }
+
+.downArrows2 {
+    height: 50px;
+    width: 100%;
+    background-color: lightseagreen;
+    animation-name: moveArrows;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.downArrows3 {
+    height: 50px;
+    width: 100%;
+    background-color: lightseagreen;
+    animation-name: moveArrows;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
