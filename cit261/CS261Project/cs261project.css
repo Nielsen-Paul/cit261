@@ -146,7 +146,7 @@ body {
     margin: 10px;
     left: 50px;
     background-color: indianred;
-    display: none;
+    display: block;
 }
 
 @keyframes colorChange {
@@ -181,7 +181,7 @@ body {
     margin: 10px;
     left: 50px;
     background-color: red;
-    display: none;
+    display: block;
 }
 
 @keyframes multiColorChange {

@@ -15,6 +15,9 @@ window.onload = function () {
     document.getElementById('medicareName').value = localStorage.getItem("name");
     document.getElementById('medicareAge').value = localStorage.getItem("age");
 
+    document.getElementById('hiddenTaxEligible').style.display = "none";
+    document.getElementById('hiddenMedicareEligible').style.display = "none";
+
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
