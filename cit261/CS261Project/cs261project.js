@@ -97,6 +97,14 @@ function medicareQuote() {
     localStorage.setItem("age", age);
 
     document.getElementById('hiddenQuote').style.display = "block";
+
+    var quoteAge = age - 20;
+    var bronze = myArr.medal[0] * myArr.amounts[quoteAge] + myArr.family[familySize - 1];
+    var silver = myArr.medal[1] * myArr.amounts[quoteAge] + myArr.family[familySize - 1];
+    var gold = myArr.medal[2] * myArr.amounts[quoteAge] + myArr.family[familySize - 1];
+    document.getElementById("ajaxTest").innerHTML =
+        "At " + myArr.ages[quoteAge] + " here are the monthly payment options: <br>" +
+        "Bronze: " + bronze + " Silver: " + silver + " Gold: " + gold;
 }
 
 function pocketQuote() {
@@ -111,6 +119,15 @@ function pocketQuote() {
     localStorage.setItem("familySize", familySize);
 
     document.getElementById('hiddenQuote').style.display = "block";
+
+    var quoteAge = age - 20;
+    var bronze = myArr.medal[0] * myArr.amounts[quoteAge] + myArr.family[familySize - 1];
+    var silver = myArr.medal[1] * myArr.amounts[quoteAge] + myArr.family[familySize - 1];
+    var gold = myArr.medal[2] * myArr.amounts[quoteAge] + myArr.family[familySize - 1];
+    document.getElementById("ajaxTest").innerHTML =
+        "At " + myArr.ages[quoteAge] + " years old and with a family size of " +
+        familySize + " here are the monthly payment options: <br>" +
+        "Bronze: " + bronze + " Silver: " + silver + " Gold: " + gold;
 }
 
 function taxAnswer() {
