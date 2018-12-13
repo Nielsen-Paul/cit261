@@ -42,7 +42,8 @@ function taxForm() {
     document.getElementById("taxCredit").style.WebkitTransition = "all 2s";
     document.getElementById("taxCredit").style.transition = "all 2s";
 
-    document.getElementById('taxCredit').style.height = "300px";
+    document.getElementById('taxCredit').style.height = "0px";
+    document.getElementById('taxCredit').style.width = "0px";
 }
 
 function medicareForm() {
@@ -52,7 +53,8 @@ function medicareForm() {
     document.getElementById("medicare").style.WebkitTransition = "all 2s";
     document.getElementById("medicare").style.transition = "all 2s";
 
-    document.getElementById('medicare').style.height = "300px";
+    document.getElementById('medicare').style.height = "0px";
+    document.getElementById('medicare').style.width = "0px";
 }
 
 function pocketForm() {
@@ -62,7 +64,8 @@ function pocketForm() {
     document.getElementById("outOfPocket").style.WebkitTransition = "all 2s";
     document.getElementById("outOfPocket").style.transition = "all 2s";
 
-    document.getElementById('outOfPocket').style.height = "300px";
+    document.getElementById('outOfPocket').style.height = "0px";
+    document.getElementById('outOfPocket').style.width = "0px";
 }
 
 function taxQuote() {
