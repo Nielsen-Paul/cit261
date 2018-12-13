@@ -26,7 +26,7 @@ body {
     transition: 2s;
     float: left;
     position: relative;
-    left: 30px;
+    left: 10px;
     margin: 10px;
 }
 
@@ -45,7 +45,7 @@ body {
     transition: 2s;
     float: left;
     position: relative;
-    left: 30px;
+    left: 10px;
     margin: 10px;
 }
 
@@ -56,7 +56,7 @@ body {
     transition: 2s;
     float: left;
     position: relative;
-    left: 30px;
+    left: 10px;
     margin: 10px;
 }
 
@@ -75,7 +75,7 @@ body {
     transition: 2s;
     float: left;
     position: relative;
-    left: 30px;
+    left: 10px;
     display: none;
     margin: 10px;
 }
@@ -87,7 +87,7 @@ body {
     transition: 2s;
     float: left;
     position: relative;
-    left: 30px;
+    left: 10px;
     margin: 10px;
 }
 
@@ -107,7 +107,7 @@ body {
     transition: 2s;
     float: left;
     position: relative;
-    left: 30px;
+    left: 10px;
     margin: 10px;
 }
 
@@ -128,7 +128,7 @@ body {
     float: left;
     position: relative;
     margin: 10px;
-    left: 30px;
+    left: 10px;
     background-color: indianred;
     animation-name: colorChange;
     animation-duration: 2s;
@@ -147,7 +147,7 @@ body {
     float: left;
     position: relative;
     margin: 10px;
-    left: 30px;
+    left: 10px;
     background-color: indianred;
     display: block;
 }
@@ -163,7 +163,7 @@ body {
     float: left;
     position: relative;
     margin: 10px;
-    left: 30px;
+    left: 10px;
     background-color: red;
     animation-name: multiColorChange;
     animation-duration: 4s;
@@ -182,7 +182,7 @@ body {
     float: left;
     position: relative;
     margin: 10px;
-    left: 30px;
+    left: 10px;
     background-color: red;
     display: block;
 }
