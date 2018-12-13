@@ -26,7 +26,7 @@ body {
     transition: 2s;
     float: left;
     position: relative;
-    left: 50px;
+    left: 30px;
     margin: 10px;
 }
 
@@ -45,7 +45,8 @@ body {
     transition: 2s;
     float: left;
     position: relative;
-    left: 50px;
+    left: 30px;
+    margin: 10px;
 }
 
 #medicare {
@@ -55,7 +56,7 @@ body {
     transition: 2s;
     float: left;
     position: relative;
-    left: 50px;
+    left: 30px;
     margin: 10px;
 }
 
@@ -74,8 +75,9 @@ body {
     transition: 2s;
     float: left;
     position: relative;
-    left: 50px;
+    left: 30px;
     display: none;
+    margin: 10px;
 }
 
 #outOfPocket {
@@ -85,7 +87,7 @@ body {
     transition: 2s;
     float: left;
     position: relative;
-    left: 50px;
+    left: 30px;
     margin: 10px;
 }
 
@@ -105,7 +107,8 @@ body {
     transition: 2s;
     float: left;
     position: relative;
-    left: 50px;
+    left: 30px;
+    margin: 10px;
 }
 
 .hidden {
@@ -125,7 +128,7 @@ body {
     float: left;
     position: relative;
     margin: 10px;
-    left: 50px;
+    left: 30px;
     background-color: indianred;
     animation-name: colorChange;
     animation-duration: 2s;
@@ -144,7 +147,7 @@ body {
     float: left;
     position: relative;
     margin: 10px;
-    left: 50px;
+    left: 30px;
     background-color: indianred;
     display: block;
 }
@@ -160,7 +163,7 @@ body {
     float: left;
     position: relative;
     margin: 10px;
-    left: 50px;
+    left: 30px;
     background-color: red;
     animation-name: multiColorChange;
     animation-duration: 4s;
@@ -179,7 +182,7 @@ body {
     float: left;
     position: relative;
     margin: 10px;
-    left: 50px;
+    left: 30px;
     background-color: red;
     display: block;
 }
