@@ -126,6 +126,7 @@ body {
     width: 30%;
     float: left;
     position: relative;
+    margin: 10px;
     left: 50px;
     background-color: indianred;
     animation-name: colorChange;
@@ -144,6 +145,7 @@ body {
     width: 30%;
     float: left;
     position: relative;
+    margin: 10px;
     left: 50px;
     background-color: red;
     animation-name: multiColorChange;
