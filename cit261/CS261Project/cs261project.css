@@ -46,7 +46,6 @@ body {
     float: left;
     position: relative;
     left: 50px;
-    margin: 10px;
 }
 
 #medicare {
@@ -76,7 +75,6 @@ body {
     float: left;
     position: relative;
     left: 50px;
-    margin: 10px;
     display: none;
 }
 
