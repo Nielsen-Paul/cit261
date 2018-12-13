@@ -205,9 +205,10 @@ i {
     padding: 5px;
 }
 
-.arrowDown {
+.arrowDown1 {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+    margin: 20px;
     animation-name: moveArrows;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -216,6 +217,7 @@ i {
 .arrowDown2 {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+    margin: 20px;
     animation-name: moveArrows;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -225,6 +227,7 @@ i {
 .arrowDown3 {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+    margin: 20px;
     animation-name: moveArrows;
     animation-duration: 1s;
     animation-iteration-count: infinite;
