@@ -220,11 +220,9 @@ i {
 }
 
 @keyframes moveArrows {
-    0% {top: 0px;}
-    25% {top: 25px;}
-    50% {top: 50px;}
-    75% {top: 75px;}
-    100% {top: 100px;}
+    0% { background-color: lightblue; }
+    50% { background-color: blue; }
+    100% { background-color: darkblue; }
 }
 
 .downArrows2 {
@@ -233,6 +231,7 @@ i {
     animation-name: moveArrows;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+    animation-delay: 0.25s;
 }
 
 .downArrows3 {
@@ -241,5 +240,6 @@ i {
     animation-name: moveArrows;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+    animation-delay: 0.5s;
 }
 
