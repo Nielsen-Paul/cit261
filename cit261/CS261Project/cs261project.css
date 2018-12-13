@@ -116,9 +116,10 @@ body {
 
 #planQuestions {
     display: table-row;
-    width: 100%;
+    width: 1000px;
     height: 150px;
     text-align: center;
+    position: relative;
 }
 
 #taxEligible {
