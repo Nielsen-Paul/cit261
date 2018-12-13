@@ -31,6 +31,7 @@ window.onload = function () {
         xmlhttp.open("GET", "payments.txt", true);
         xmlhttp.send();
     }
+
     if (localStorage.getItem("quoteFile")) {
         quoteJSON = localStorage.getItem("quoteFile");
     
@@ -85,8 +86,6 @@ function taxQuote() {
     var income = document.getElementById('income').value;
     var familySize = document.getElementById('familySize').value;
 
-    quoteJSON = localStorage.getItem("quoteFile");
-
     localStorage.setItem("name", name);
     localStorage.setItem("age", age);
     localStorage.setItem("income", income);
@@ -94,11 +93,11 @@ function taxQuote() {
 
     document.getElementById('hiddenQuote').style.display = "block";
 
-    var bronze = quoteJSON.medal[0] * quoteJSON.amounts[age] + quoteJSON.family[familySize - 1];
-    var silver = quoteJSON.medal[1] * quoteJSON.amounts[age] + quoteJSON.family[familySize - 1];
-    var gold = quoteJSON.medal[2] * quoteJSON.amounts[age] + quoteJSON.family[familySize - 1];
+    var bronze = myArr.medal[0] * myArr.amounts[age] + myArr.family[familySize - 1];
+    var silver = myArr.medal[1] * myArr.amounts[age] + myArr.family[familySize - 1];
+    var gold = myArr.medal[2] * myArr.amounts[age] + myArr.family[familySize - 1];
     document.getElementById("ajaxTest").innerHTML =
-        "At " + quoteJSON.ages[age] + " years old and with a family size of " +
+        "At " + myArr.ages[age] + " years old and with a family size of " +
         familySize + " here are the monthly payment options: <br>" +
         "Bronze: " + bronze + " Silver: " + silver + " Gold: " + gold;
 }
@@ -112,11 +111,11 @@ function medicareQuote() {
 
     document.getElementById('hiddenQuote').style.display = "block";
 
-    var bronze = quoteJSON.medal[0] * quoteJSON.amounts[age] + quoteJSON.family[familySize - 1];
-    var silver = quoteJSON.medal[1] * quoteJSON.amounts[age] + quoteJSON.family[familySize - 1];
-    var gold = quoteJSON.medal[2] * quoteJSON.amounts[age] + quoteJSON.family[familySize - 1];
+    var bronze = myArr.medal[0] * myArr.amounts[age] + myArr.family[familySize - 1];
+    var silver = myArr.medal[1] * myArr.amounts[age] + myArr.family[familySize - 1];
+    var gold = myArr.medal[2] * myArr.amounts[age] + myArr.family[familySize - 1];
     document.getElementById("ajaxTest").innerHTML =
-        "At " + quoteJSON.ages[age] + " here are the monthly payment options: <br>" +
+        "At " + myArr.ages[age] + " here are the monthly payment options: <br>" +
         "Bronze: " + bronze + " Silver: " + silver + " Gold: " + gold;
 }
 
@@ -133,11 +132,11 @@ function pocketQuote() {
 
     document.getElementById('hiddenQuote').style.display = "block";
 
-    var bronze = quoteJSON.medal[0] * quoteJSON.amounts[age] + quoteJSON.family[familySize - 1];
-    var silver = quoteJSON.medal[1] * quoteJSON.amounts[age] + quoteJSON.family[familySize - 1];
-    var gold = quoteJSON.medal[2] * quoteJSON.amounts[age] + quoteJSON.family[familySize - 1];
+    var bronze = myArr.medal[0] * myArr.amounts[age] + myArr.family[familySize - 1];
+    var silver = myArr.medal[1] * myArr.amounts[age] + myArr.family[familySize - 1];
+    var gold = myArr.medal[2] * myArr.amounts[age] + myArr.family[familySize - 1];
     document.getElementById("ajaxTest").innerHTML =
-        "At " + quoteJSON.ages[age] + " years old and with a family size of " +
+        "At " + myArr.ages[age] + " years old and with a family size of " +
         familySize + " here are the monthly payment options: <br>" +
         "Bronze: " + bronze + " Silver: " + silver + " Gold: " + gold;
 }
