@@ -1,6 +1,8 @@
 
 window.onload = function () {
+    if (!localStorage.getItem("name")) {
     document.getElementById('printName').innerHTML = "Welcome back " + localStorage.getItem("name");
+    }
 
     document.getElementById('name').value = localStorage.getItem("name");
     document.getElementById('age').value = localStorage.getItem("age");
@@ -18,7 +20,7 @@ window.onload = function () {
     document.getElementById('hiddenTaxEligible').style.display = "none";
     document.getElementById('hiddenMedicareEligible').style.display = "none";
 
-    if (!localStorage.getItem(quoteFile)) {
+    if (!localStorage.getItem("quoteFile")) {
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
