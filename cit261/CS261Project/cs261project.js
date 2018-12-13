@@ -86,12 +86,12 @@ function pocketForm() {
 
 function taxQuote() {
     var name = document.getElementById('name').value;
-    var age = document.getElementById('age').value - 20;
+    var age = document.getElementById('age').value;
     var income = document.getElementById('income').value;
     var familySize = document.getElementById('familySize').value;
 
     localStorage.setItem("name", name);
-    localStorage.setItem("age", age);
+    localStorage.setItem("age", age - 20);
     localStorage.setItem("income", income);
     localStorage.setItem("familySize", familySize);
 
@@ -108,10 +108,10 @@ function taxQuote() {
 
 function medicareQuote() {
     var name = document.getElementById('medicareName').value;
-    var age = document.getElementById('medicareAge').value - 20;
+    var age = document.getElementById('medicareAge').value;
 
     localStorage.setItem("name", name);
-    localStorage.setItem("age", age);
+    localStorage.setItem("age", age - 20);
 
     document.getElementById('hiddenQuote').style.display = "block";
 
@@ -125,12 +125,12 @@ function medicareQuote() {
 
 function pocketQuote() {
     var name = document.getElementById('pocketName').value;
-    var age = document.getElementById('pocketAge').value - 20;
+    var age = document.getElementById('pocketAge').value;
     var income = document.getElementById('pocketIncome').value;
     var familySize = document.getElementById('pocketFamilySize').value;
 
     localStorage.setItem("name", name);
-    localStorage.setItem("age", age);
+    localStorage.setItem("age", age - 20);
     localStorage.setItem("income", income);
     localStorage.setItem("familySize", familySize);
 
