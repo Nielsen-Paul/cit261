@@ -1,3 +1,4 @@
+var myArr;
 
 window.onload = function () {
     if (localStorage.getItem("name")) {
@@ -24,7 +25,7 @@ window.onload = function () {
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
-                var myArr = JSON.parse(this.responseText);
+                myArr = JSON.parse(this.responseText);
                 localStorage.setItem("quoteFile", myArr);
             }
         };
