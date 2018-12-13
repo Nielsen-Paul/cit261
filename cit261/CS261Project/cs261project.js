@@ -106,7 +106,7 @@ function taxQuote() {
 
 function medicareQuote() {
     var name = document.getElementById('medicareName').value;
-    var age = document.getElementById('medicareAge').value;
+    var age = document.getElementById('medicareAge').value - 20;
 
     localStorage.setItem("name", name);
     localStorage.setItem("age", age);
@@ -123,7 +123,7 @@ function medicareQuote() {
 
 function pocketQuote() {
     var name = document.getElementById('pocketName').value;
-    var age = document.getElementById('pocketAge').value;
+    var age = document.getElementById('pocketAge').value - 20;
     var income = document.getElementById('pocketIncome').value;
     var familySize = document.getElementById('pocketFamilySize').value;
 
