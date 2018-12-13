@@ -40,7 +40,7 @@ body {
 
 #hiddenTaxDiv {
     display: none;
-    width: 20px;
+    width: 30%;
 }
 
 #medicare {
@@ -64,7 +64,7 @@ body {
 
 #hiddenMedicareDiv {
     display: none;
-    width: 20px;
+    width: 30%;
 }
 
 #outOfPocket {
@@ -88,7 +88,7 @@ body {
 
 #hiddenPocketDiv {
     display: none;
-    width: 20px;
+    width: 30%;
 }
 
 .hidden {
