@@ -96,6 +96,7 @@ function taxQuote() {
     localStorage.setItem("familySize", familySize);
 
     document.getElementById('hiddenQuote').style.display = "block";
+    document.getElementById('finalQuote').style.display = "block";
 
     var bronze = myArr.medal[0] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
     var silver = myArr.medal[1] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
@@ -114,6 +115,7 @@ function medicareQuote() {
     localStorage.setItem("age", age);
 
     document.getElementById('hiddenQuote').style.display = "block";
+    document.getElementById('finalQuote').style.display = "block";
 
     var bronze = myArr.medal[0] * myArr.amounts[age - 20];
     var silver = myArr.medal[1] * myArr.amounts[age - 20];
@@ -135,6 +137,7 @@ function pocketQuote() {
     localStorage.setItem("familySize", familySize);
 
     document.getElementById('hiddenQuote').style.display = "block";
+    document.getElementById('finalQuote').style.display = "block";
 
     var bronze = myArr.medal[0] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
     var silver = myArr.medal[1] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
