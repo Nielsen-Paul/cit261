@@ -258,7 +258,7 @@ i {
     background-color: rgb(221, 107, 0);
     transition: 1s;
     display: inline-block;
-    margin: 0px 40px;
+    margin: 0px 60px;
 }
 
 #bronze:hover {
@@ -272,7 +272,7 @@ i {
     background-color: silver;
     transition: 1s;
     display: inline-block;
-    margin: 0px 40px;
+    margin: 0px 60px;
 }
 
 #silver:hover {
@@ -286,7 +286,7 @@ i {
     background-color: gold;
     transition: 1s;
     display: inline-block;
-    margin: 0px 40px;
+    margin: 0px 60px;
 }
 
 #gold:hover {
