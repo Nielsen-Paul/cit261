@@ -252,6 +252,8 @@ i {
     border-radius: 50%;
     background-color: rgb(221, 107, 0);
     transition: 1s;
+    left: 50%;
+    margin: 20px;
 }
 
 #bronze:hover {
