@@ -246,4 +246,16 @@ i {
     100% { border-color: rgb(2, 2, 58); }
 }
 
+#bronze {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(221, 107, 0);
+    transition: 1s;
+}
+
+#bronze:hover {
+    transform: rotateY(360deg);
+}
+
 
