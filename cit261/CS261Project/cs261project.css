@@ -265,4 +265,32 @@ i {
     transform: rotateY(360deg);
 }
 
+#silver {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: silver;
+    transition: 1s;
+    display: inline-block;
+    margin: 20px;
+}
+
+#silver:hover {
+    transform: rotateY(360deg);
+}
+
+#gold {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: gold;
+    transition: 1s;
+    display: inline-block;
+    margin: 20px;
+}
+
+#gold:hover {
+    transform: rotateY(360deg);
+}
+
 
