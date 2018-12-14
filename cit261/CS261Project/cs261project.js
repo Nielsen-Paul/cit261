@@ -115,9 +115,9 @@ function medicareQuote() {
 
     document.getElementById('hiddenQuote').style.display = "block";
 
-    var bronze = myArr.medal[0] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
-    var silver = myArr.medal[1] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
-    var gold = myArr.medal[2] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
+    var bronze = myArr.medal[0] * myArr.amounts[age - 20];
+    var silver = myArr.medal[1] * myArr.amounts[age - 20];
+    var gold = myArr.medal[2] * myArr.amounts[age - 20];
     document.getElementById("ajaxTest").innerHTML =
         "At " + myArr.ages[age - 20] + " here are the monthly payment options: <br>" +
         "Bronze: " + bronze + " Silver: " + silver + " Gold: " + gold;
