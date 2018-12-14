@@ -102,7 +102,7 @@ function taxQuote() {
     var gold = myArr.medal[2] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
     document.getElementById("ajaxTest").innerHTML =
         "At " + myArr.ages[age - 20] + " years old and with a family size of " +
-        familySize + " here are the monthly payment options: <br>" +
+        familySize + ", here are your monthly payment options: <br>" +
         "Bronze: $" + bronze.toFixed(2) + " Silver: $" + silver.toFixed(2) + " Gold: $" + gold.toFixed(2);
 }
 
@@ -119,7 +119,7 @@ function medicareQuote() {
     var silver = myArr.medal[1] * myArr.amounts[age - 20];
     var gold = myArr.medal[2] * myArr.amounts[age - 20];
     document.getElementById("ajaxTest").innerHTML =
-        "At " + myArr.ages[age - 20] + " here are the monthly payment options: <br>" +
+        "At " + myArr.ages[age - 20] + ", here are your monthly payment options: <br>" +
         "Bronze: $" + bronze.toFixed(2) + " Silver: $" + silver.toFixed(2) + " Gold: $" + gold.toFixed(2);
 }
 
@@ -141,7 +141,7 @@ function pocketQuote() {
     var gold = myArr.medal[2] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
     document.getElementById("ajaxTest").innerHTML =
         "At " + myArr.ages[age - 20] + " years old and with a family size of " +
-        familySize + " here are the monthly payment options: <br>" +
+        familySize + ", here are your monthly payment options: <br>" +
         "Bronze: $" + bronze.toFixed(2) + " Silver: $" + silver.toFixed(2) + " Gold: $" + gold.toFixed(2);
 }
 
