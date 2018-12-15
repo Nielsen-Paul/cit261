@@ -294,4 +294,7 @@ i {
     transform: rotateY(360deg);
 }
 
+#red {
+    color: red;
+}
 
