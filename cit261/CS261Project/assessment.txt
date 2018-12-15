@@ -1,0 +1,37 @@
+CIT261 Project Assessment
+o	A link to the app, of course. 
+•	https://nielsen-paul.github.io/cit261/cit261/CS261Project/cs261project.html
+o	A description of your design process.
+1.	What problem does your application solve?
+•	This application assists the user in choosing a health plan for the upcoming year.
+•	It allows them enter some basic information like their name, family size, household income, and age and lets them choose from 3 options for health plans.
+2.	What were your design considerations?
+•	I wanted the design to look clean at first to allow the user to easily see their options and make quick decisions.  Then I wanted new divs to appear as they went farther along in the process to point to the next step in the process.
+3.	What caused you the most trouble?
+•	Getting the arrows pointing down to the bottom of the screen to animate.
+4.	What would not work and how did your fix it?
+•	For the moving arrows, I tried to get one set of arrows to move down the screen by changing the “top” css.  This was not working for me, I even got a message from github saying that what I had made had failed.  I had not seen that before. So I decided that I would try having more arrows and having the arrows change colors.  This worked better for me and then it was just a matter of changing the right colors to make it look like they were drawing the attention downwards.
+5.	How you used the different Code Topics
+•	I had a pretty clear idea of what I wanted so when I asked myself how I would do it I would think of the Code Topic that I would use to do it.  Then I would go to the code that I had done for the Code Topic and used that as a reference for making the part of the app that I was planning on making.
+6.	How you may have altered your app from the original concept.
+•	I’m actually surprised how similar it is from what I originally had in my head.  Like I said before, I altered the way the arrows move down the screen.  The biggest thing was that I added more animations, transitions, and transformations than what I had originally planned.  I made the buttons with questions about plans change colors and transform shapes, which I had not planned on doing.  I also added bronze, silver, and gold coins for the user to click on to choose their plan.
+7.	What are you most proud of?
+•	I am proud of the arrows, because I spent the most time on them.  I’m also proud of the idea of having appearing and disappearing divs.  I remember reading that a lot of people in the industry use hidden divs that appear when they are needed.  It was great to be able to apply that knowledge and for it to work so well.  I’m also proud of the overall project.  Between this class and another class it has inspired me to create an app for my in-laws.  They are health insurance sales people and they have been complaining about the software they use to enter and store their client’s information.  I think I’m going to do that for my senior project.
+8.	DO NOT just give me a link to the app. 
+9.	Tell me what you have accomplished. It does not need to be formal.
+•	Being able to provide a useful way for someone to get a quote for health insurance feels like a great accomplishment.  I mother-in-law gave me real numbers that I put into the application.  What a want to do with this now is take this back to my in-laws and show them what I am capable of doing and talk to them about doing and app for them.
+•	I think that is the biggest accomplishment is creating something that I am proud of and that I can show others so that they will see my skills and want to work with me to create more.  I know it’s not perfect, but for what I knew before the semester to now I have accomplished a lot and made a lot of progress.
+10.	Tell me what you are doing with the CSS. Remember it is 48% of your grade, impress me. It must be multiple examples of each.
+•	Animations
+	The tax credit question div changes between three different colors and goes forward and backward so it doesn’t suddenly change back to the first color.
+	The medicare question div changes between five different colors and does the same forward and backward changes.
+	The down arrows to get the user to look at the bottom of the page for the quote changes color and draws the user’s attention downwards.
+•	Transitions
+	Each of the plan choices at the beginning transition to light blue when the user hovers over them.
+	These same divs move into place when they are clicked on the div that is clicked on slowly disappears and the new hidden div appears and moves into place.
+	As the questions divs transform to ovals when hovered on they transition from one to the next.
+	The coins spinning transition so you can see the spin take place
+•	Transformations
+	The questions divs change from boxes to ovals when the user hovers over them.
+	The arrows are actually triangles that are transformed by turning them to point downwards and only having two of the borders show.
+	The bronze, silver, and gold coins spin 
