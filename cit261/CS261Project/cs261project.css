@@ -262,10 +262,6 @@ i {
     margin: 0px 60px;
 }
 
-#bronze:hover {
-    transform: rotateY(360deg);
-}
-
 #silver {
     height: 40px;
     width: 40px;
@@ -274,10 +270,6 @@ i {
     transition: 1s;
     display: inline-block;
     margin: 0px 60px;
-}
-
-#silver:hover {
-    transform: rotateY(360deg);
 }
 
 #gold {
@@ -290,8 +282,5 @@ i {
     margin: 0px 60px;
 }
 
-#gold:hover {
-    transform: rotateY(360deg);
-}
 
 

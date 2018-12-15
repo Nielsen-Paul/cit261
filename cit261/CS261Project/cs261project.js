@@ -39,8 +39,6 @@ window.onload = function () {
         age = localStorage.getItem("age");
         familySize = localStorage.getItem("familySize");
     
-        document.getElementById('hiddenQuote').style.display = "block";
-    
         var bronze = quoteJSON.medal[0] * quoteJSON.amounts[age] + quoteJSON.family[familySize - 1];
         var silver = quoteJSON.medal[1] * quoteJSON.amounts[age] + quoteJSON.family[familySize - 1];
         var gold = quoteJSON.medal[2] * quoteJSON.amounts[age] + quoteJSON.family[familySize - 1];
@@ -48,6 +46,14 @@ window.onload = function () {
             "At " + quoteJSON.ages[age] + " years old and with a family size of " +
             familySize + " here are the monthly payment options: <br>" +
             "Bronze: $" + bronze.toFixed(2) + " Silver: $" + silver.toFixed(2) + " Gold: $" + gold.toFixed(2);
+    }
+
+    setInterval(spin, 2000);
+
+    function spin() { 
+        document.getElementById('bronze').style.transform = 'rotateY(360deg)';
+        document.getElementById('silver').style.transform = 'rotateY(360deg)';
+        document.getElementById('gold').style.transform = 'rotateY(360deg)';
     }
 }
 
