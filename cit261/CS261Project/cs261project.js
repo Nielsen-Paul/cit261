@@ -1,4 +1,7 @@
 var myArr;
+var finalBronze;
+var finalSilver;
+var finalGold;
 
 window.onload = function () {
     if (localStorage.getItem("name")) {
@@ -80,19 +83,12 @@ function taxQuote() {
     document.getElementById('hiddenQuote').style.display = "block";
     document.getElementById('finalQuote').style.display = "block";
 
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            myArr = JSON.parse(this.responseText);
-        }
-    };
-    xmlhttp.open("GET", "payments.txt", true);
-    xmlhttp.send();
-
     var bronze = myArr.medal[0] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
     var silver = myArr.medal[1] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
     var gold = myArr.medal[2] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
-
+    finalBronze = bronze;
+    finalSilver = silver;
+    finalGold = gold;
     document.getElementById("ajaxTest").innerHTML =
         "At " + myArr.ages[age - 20] + " years old and with a family size of " +
         familySize + ", here are your monthly payment options: <br>" +
@@ -109,19 +105,12 @@ function medicareQuote() {
     document.getElementById('hiddenQuote').style.display = "block";
     document.getElementById('finalQuote').style.display = "block";
 
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            myArr = JSON.parse(this.responseText);
-        }
-    };
-    xmlhttp.open("GET", "payments.txt", true);
-    xmlhttp.send();
-
     var bronze = myArr.medal[0] * myArr.amounts[age - 20];
     var silver = myArr.medal[1] * myArr.amounts[age - 20];
     var gold = myArr.medal[2] * myArr.amounts[age - 20];
-
+    finalBronze = bronze;
+    finalSilver = silver;
+    finalGold = gold;
     document.getElementById("ajaxTest").innerHTML =
         "At " + myArr.ages[age - 20] + ", here are your monthly payment options: <br>" +
         "Bronze: $" + bronze.toFixed(2) + " Silver: $" + silver.toFixed(2) + " Gold: $" + gold.toFixed(2);
@@ -141,19 +130,12 @@ function pocketQuote() {
     document.getElementById('hiddenQuote').style.display = "block";
     document.getElementById('finalQuote').style.display = "block";
 
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            myArr = JSON.parse(this.responseText);
-        }
-    };
-    xmlhttp.open("GET", "payments.txt", true);
-    xmlhttp.send();
-
     var bronze = myArr.medal[0] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
     var silver = myArr.medal[1] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
     var gold = myArr.medal[2] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
-
+    finalBronze = bronze;
+    finalSilver = silver;
+    finalGold = gold;
     document.getElementById("ajaxTest").innerHTML =
         "At " + myArr.ages[age - 20] + " years old and with a family size of " +
         familySize + ", here are your monthly payment options: <br>" +
@@ -171,14 +153,17 @@ function medicareAnswer() {
 }
 
 function bronzeClick() {
-    document.getElementById('finalChoice').innerHTML = "Congratulations, you have chosen your plan!";
+    document.getElementById('finalChoice').innerHTML = "Congratulations, you have chosen your plan!<br>"
+        + "Your monthly payment will be $" + finalBronze.toFixed(2);
 }
 
 function silverClick() {
-    document.getElementById('finalChoice').innerHTML = "Congratulations, you have chosen your plan!";
+    document.getElementById('finalChoice').innerHTML = "Congratulations, you have chosen your plan!<br>"
+        + "Your monthly payment will be $" + finalSilver.toFixed(2);
 }
 
 function goldClick() {
-    document.getElementById('finalChoice').innerHTML = "Congratulations, you have chosen your plan!";
+    document.getElementById('finalChoice').innerHTML = "Congratulations, you have chosen your plan!<br>"
+        + "Your monthly payment will be $" + finalGold.toFixed(2);
 }
 
