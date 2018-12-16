@@ -25,31 +25,17 @@ window.onload = function () {
     document.getElementById('hiddenTaxEligible').style.display = "none";
     document.getElementById('hiddenMedicareEligible').style.display = "none";
 
-    if (!localStorage.getItem("quoteFile")) {
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function () {
-            if (this.readyState == 4 && this.status == 200) {
-                myArr = JSON.parse(this.responseText);
-                localStorage.setItem(quoteFile, myArr);
-            }
-        };
-        xmlhttp.open("GET", "payments.txt", true);
-        xmlhttp.send();
-    }
 
-    if (localStorage.getItem("quoteFile")) {
-        quoteJSON = localStorage.getItem("quoteFile");
-        age = localStorage.getItem("age");
-        familySize = localStorage.getItem("familySize");
-    
-        var bronze = quoteJSON.medal[0] * quoteJSON.amounts[age] + quoteJSON.family[familySize - 1];
-        var silver = quoteJSON.medal[1] * quoteJSON.amounts[age] + quoteJSON.family[familySize - 1];
-        var gold = quoteJSON.medal[2] * quoteJSON.amounts[age] + quoteJSON.family[familySize - 1];
-        document.getElementById("ajaxTest").innerHTML =
-            "At " + quoteJSON.ages[age] + " years old and with a family size of " +
-            familySize + " here are the monthly payment options: <br>" +
-            "Bronze: $" + bronze.toFixed(2) + " Silver: $" + silver.toFixed(2) + " Gold: $" + gold.toFixed(2);
-    }
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            myArr = JSON.parse(this.responseText);
+            localStorage.setItem(quoteFile, myArr);
+        }
+    };
+    xmlhttp.open("GET", "payments.txt", true);
+    xmlhttp.send();
+
 }
 
 function taxForm() {
@@ -169,17 +155,17 @@ function medicareAnswer() {
 }
 
 function bronzeClick() {
-    document.getElementById('finalChoice').innerHTML = "Congratulations, you have chosen your plan!<br>" 
-    + "Your monthly payment will be $" + finalBronze.toFixed(2);
+    document.getElementById('finalChoice').innerHTML = "Congratulations, you have chosen your plan!<br>"
+        + "Your monthly payment will be $" + finalBronze.toFixed(2);
 }
 
 function silverClick() {
-    document.getElementById('finalChoice').innerHTML = "Congratulations, you have chosen your plan!<br>" 
-    + "Your monthly payment will be $" + finalSilver.toFixed(2);
+    document.getElementById('finalChoice').innerHTML = "Congratulations, you have chosen your plan!<br>"
+        + "Your monthly payment will be $" + finalSilver.toFixed(2);
 }
 
 function goldClick() {
-    document.getElementById('finalChoice').innerHTML = "Congratulations, you have chosen your plan!<br>" 
-    + "Your monthly payment will be $" + finalGold.toFixed(2);
+    document.getElementById('finalChoice').innerHTML = "Congratulations, you have chosen your plan!<br>"
+        + "Your monthly payment will be $" + finalGold.toFixed(2);
 }
 
