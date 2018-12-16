@@ -1,7 +1,4 @@
 var myArr;
-var finalBronze;
-var finalSilver;
-var finalGold;
 
 window.onload = function () {
     if (localStorage.getItem("name")) {
@@ -86,9 +83,7 @@ function taxQuote() {
     var bronze = myArr.medal[0] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
     var silver = myArr.medal[1] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
     var gold = myArr.medal[2] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
-    finalBronze = bronze;
-    finalSilver = silver;
-    finalGold = gold;
+
     document.getElementById("ajaxTest").innerHTML =
         "At " + myArr.ages[age - 20] + " years old and with a family size of " +
         familySize + ", here are your monthly payment options: <br>" +
@@ -108,9 +103,7 @@ function medicareQuote() {
     var bronze = myArr.medal[0] * myArr.amounts[age - 20];
     var silver = myArr.medal[1] * myArr.amounts[age - 20];
     var gold = myArr.medal[2] * myArr.amounts[age - 20];
-    finalBronze = bronze;
-    finalSilver = silver;
-    finalGold = gold;
+
     document.getElementById("ajaxTest").innerHTML =
         "At " + myArr.ages[age - 20] + ", here are your monthly payment options: <br>" +
         "Bronze: $" + bronze.toFixed(2) + " Silver: $" + silver.toFixed(2) + " Gold: $" + gold.toFixed(2);
@@ -133,9 +126,7 @@ function pocketQuote() {
     var bronze = myArr.medal[0] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
     var silver = myArr.medal[1] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
     var gold = myArr.medal[2] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
-    finalBronze = bronze;
-    finalSilver = silver;
-    finalGold = gold;
+
     document.getElementById("ajaxTest").innerHTML =
         "At " + myArr.ages[age - 20] + " years old and with a family size of " +
         familySize + ", here are your monthly payment options: <br>" +
@@ -153,17 +144,14 @@ function medicareAnswer() {
 }
 
 function bronzeClick() {
-    document.getElementById('finalChoice').innerHTML = "Congratulations, you have chosen your plan!<br>"
-        + "Your monthly payment will be $" + finalBronze.toFixed(2);
+    document.getElementById('finalChoice').innerHTML = "Congratulations, you have chosen your plan!";
 }
 
 function silverClick() {
-    document.getElementById('finalChoice').innerHTML = "Congratulations, you have chosen your plan!<br>"
-        + "Your monthly payment will be $" + finalSilver.toFixed(2);
+    document.getElementById('finalChoice').innerHTML = "Congratulations, you have chosen your plan!";
 }
 
 function goldClick() {
-    document.getElementById('finalChoice').innerHTML = "Congratulations, you have chosen your plan!<br>"
-        + "Your monthly payment will be $" + finalGold.toFixed(2);
+    document.getElementById('finalChoice').innerHTML = "Congratulations, you have chosen your plan!";
 }
 
