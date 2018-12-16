@@ -80,6 +80,15 @@ function taxQuote() {
     document.getElementById('hiddenQuote').style.display = "block";
     document.getElementById('finalQuote').style.display = "block";
 
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            myArr = JSON.parse(this.responseText);
+        }
+    };
+    xmlhttp.open("GET", "payments.txt", true);
+    xmlhttp.send();
+
     var bronze = myArr.medal[0] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
     var silver = myArr.medal[1] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
     var gold = myArr.medal[2] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
@@ -99,6 +108,15 @@ function medicareQuote() {
 
     document.getElementById('hiddenQuote').style.display = "block";
     document.getElementById('finalQuote').style.display = "block";
+
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            myArr = JSON.parse(this.responseText);
+        }
+    };
+    xmlhttp.open("GET", "payments.txt", true);
+    xmlhttp.send();
 
     var bronze = myArr.medal[0] * myArr.amounts[age - 20];
     var silver = myArr.medal[1] * myArr.amounts[age - 20];
@@ -122,6 +140,15 @@ function pocketQuote() {
 
     document.getElementById('hiddenQuote').style.display = "block";
     document.getElementById('finalQuote').style.display = "block";
+
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            myArr = JSON.parse(this.responseText);
+        }
+    };
+    xmlhttp.open("GET", "payments.txt", true);
+    xmlhttp.send();
 
     var bronze = myArr.medal[0] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
     var silver = myArr.medal[1] * myArr.amounts[age - 20] + myArr.family[familySize - 1];
