@@ -1,5 +1,4 @@
 var myArr;
-var quoteFile;
 var finalBronze;
 var finalSilver;
 var finalGold;
@@ -30,7 +29,6 @@ window.onload = function () {
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             myArr = JSON.parse(this.responseText);
-            localStorage.setItem(quoteFile, myArr);
         }
     };
     xmlhttp.open("GET", "payments.txt", true);
